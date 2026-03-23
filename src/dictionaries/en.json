@@ -1,0 +1,67 @@
+{
+  "navbar": {
+    "home": "Home",
+    "about": "About Us",
+    "services": "Services",
+    "contact": "Contact",
+    "cta": "Start Today"
+  },
+  "hero": {
+    "title": "Transforming Ideas into",
+    "titleAccent": "Unique Experiences",
+    "description": "We design and produce strategic corporate events that strengthen organizational culture and position your brand with unparalleled impact.",
+    "ctaPrimary": "Contact Us",
+    "ctaSecondary": "Discover More"
+  },
+  "stats": {
+    "projects": "Executed Projects",
+    "clients": "Satisfied Clients",
+    "annual": "Annual Events"
+  },
+  "whyChooseUs": {
+    "tag": "Why Choose HANNAH EVENTS?",
+    "title": "Corporate experiences designed to generate",
+    "titleAccent": "Impact and Results",
+    "description": "At HANNAH EVENTS, we combine creativity, planning, and meticulous execution to offer events that generate lasting bonds, boosting loyalty and brand positioning.",
+    "cta": "Contact Us",
+    "highlights": [
+      { "title": "National and International Events", "desc": "We manage and produce corporate events with local and global reach to maximize your brand's presence." },
+      { "title": "Personalized Strategies", "desc": "We create annual calendars of workshops, activations, and gatherings to strengthen your company's culture and loyalty." },
+      { "title": "Professional Executives", "desc": "Our expert team ensures impeccable execution in every detail, guaranteeing quality and professionalism." },
+      { "title": "Immersive Experiences", "desc": "We design spaces and dynamics that generate genuine connections and position your brand in a memorable way." }
+    ]
+  },
+  "services": {
+    "tag": "Elite Services",
+    "title": "Excellence in Every",
+    "titleAccent": "Detail",
+    "list": [
+      { "title": "Corporate Events", "desc": "Comprehensive design and production of strategic events for brands and institutions." },
+      { "title": "Brand Activations", "desc": "Immersive experiences that emotionally connect consumers with your purpose." },
+      { "title": "Workshops & Gatherings", "desc": "Custom programs to strengthen organizational culture and leadership." }
+    ]
+  },
+  "footer": {
+    "description": "Transforming ideas into strategic experiences. Leaders in corporate event organization nationwide and internationally.",
+    "nav": "Navigation",
+    "legal": "Legal",
+    "contact": "Contact",
+    "phone": "+52 33 2970 0210",
+    "whatsapp": "wa.me/+5213329700210",
+    "email": "contacto@hannahevents.org",
+    "location": "Guadalajara, Jalisco, Mexico",
+    "rights": "All Rights Reserved",
+    "madeBy": "Made by"
+  },
+  "contactForm": {
+    "title": "Send us a Message",
+    "name": "Full Name",
+    "email": "Email Address",
+    "subject": "Subject",
+    "message": "Message",
+    "send": "Send Message",
+    "sending": "Sending...",
+    "success": "Message sent successfully! We will get in touch soon.",
+    "error": "There was an error sending the message. Please try again."
+  }
+}

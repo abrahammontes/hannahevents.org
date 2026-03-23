@@ -1,0 +1,67 @@
+{
+  "navbar": {
+    "home": "Inicio",
+    "about": "Quiénes somos",
+    "services": "Servicios",
+    "contact": "Contacto",
+    "cta": "Empieza Hoy"
+  },
+  "hero": {
+    "title": "Transformamos Ideas en",
+    "titleAccent": "Experiencias Únicas",
+    "description": "Diseñamos y producimos eventos corporativos estratégicos que fortalecen la cultura organizacional y posicionan tu marca con impacto inigualable.",
+    "ctaPrimary": "Contáctanos",
+    "ctaSecondary": "Descubre Más"
+  },
+  "stats": {
+    "projects": "Proyectos Ejecutados",
+    "clients": "Clientes Satisfechos",
+    "annual": "Eventos Anuales"
+  },
+  "whyChooseUs": {
+    "tag": "¿Por qué Elegir HANNAH EVENTS?",
+    "title": "Experiencias corporativas diseñadas para generar",
+    "titleAccent": "Impacto y Resultados",
+    "description": "En HANNAH EVENTS, combinamos creatividad, planeación y ejecución minuciosa para ofrecer eventos que generan vínculos duraderos, impulsando la fidelización y el posicionamiento de marca.",
+    "cta": "Contáctanos",
+    "highlights": [
+      { "title": "Eventos a Nivel Nacional e Internacional", "desc": "Gestionamos y producimos eventos corporativos con alcance local y global para maximizar la presencia de tu marca." },
+      { "title": "Estrategias Personalizadas", "desc": "Creamos calendarios anuales de talleres, activaciones y encuentros para fortalecer la cultura y la fidelidad en tu empresa." },
+      { "title": "Ejecutivos Profesionales", "desc": "Nuestro equipo experto asegura una ejecución impecable en cada detalle, garantizando calidad y profesionalismo." },
+      { "title": "Experiencias Inmersivas", "desc": "Diseñamos espacios y dinámicas que generan conexiones genuinas y posicionan tu marca de manera memorable." }
+    ]
+  },
+  "services": {
+    "tag": "Servicios de Élite",
+    "title": "Excelencia en cada",
+    "titleAccent": "Detalle",
+    "list": [
+      { "title": "Eventos Corporativos", "desc": "Diseño integral y producción de eventos estratégicos para marcas e instituciones." },
+      { "title": "Activaciones de Marca", "desc": "Experiencias inmersivas que conectan emocionalmente a los consumidores con tu propósito." },
+      { "title": "Talleres y Encuentros", "desc": "Programas personalizados para fortalecer la cultura organizacional y el liderazgo." }
+    ]
+  },
+  "footer": {
+    "description": "Transformamos ideas en experiencias estratégicas. Líderes en organización de eventos corporativos a nivel nacional e internacional.",
+    "nav": "Navegación",
+    "legal": "Legal",
+    "contact": "Contacto",
+    "phone": "+52 33 2970 0210",
+    "whatsapp": "wa.me/+5213329700210",
+    "email": "contacto@hannahevents.org",
+    "location": "Guadalajara, Jalisco, México",
+    "rights": "Derechos Reservados",
+    "madeBy": "Hecho por"
+  },
+  "contactForm": {
+    "title": "Envíanos un Mensaje",
+    "name": "Nombre Completo",
+    "email": "Correo Electrónico",
+    "subject": "Asunto",
+    "message": "Mensaje",
+    "send": "Enviar Mensaje",
+    "sending": "Enviando...",
+    "success": "¡Mensaje enviado con éxito! Nos pondremos en contacto pronto.",
+    "error": "Hubo un error al enviar el mensaje. Por favor intenta de nuevo."
+  }
+}
