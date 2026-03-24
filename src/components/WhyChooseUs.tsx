@@ -29,7 +29,7 @@ const WhyChooseUs = ({ dictionary }: WhyChooseUsProps) => {
   return (
     <section id="quienes-somos" style={{ backgroundColor: 'rgba(14, 14, 14, 0.6)', backdropFilter: 'blur(10px)' }}>
       <div className="section-spacing" style={{ maxWidth: '1200px', margin: '0 auto' }}>
-        <div style={{ display: 'flex', gap: '4rem', alignItems: 'center', marginBottom: '4rem' }}>
+        <div style={{ display: 'flex', gap: '2.5rem', alignItems: 'center', marginBottom: '2.5rem' }}>
           <div style={{ flex: 1 }}>
             <p className="serif" style={{ color: 'var(--primary)', textTransform: 'uppercase', letterSpacing: '0.2em', fontSize: '0.875rem', fontWeight: '600', marginBottom: '1rem' }}>{dictionary.tag}</p>
             <h2 className="serif" style={{ fontSize: 'max(2.5rem, 4vw)', fontWeight: '700', marginBottom: '2rem', lineHeight: '1.2' }}>

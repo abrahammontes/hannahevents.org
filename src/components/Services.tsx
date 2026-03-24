@@ -24,12 +24,12 @@ const Services = ({ dictionary }: ServicesProps) => {
   return (
     <section id="servicios" className="section-spacing" style={{ backgroundColor: 'rgba(19, 19, 19, 0.4)' }}>
       <div style={{ maxWidth: '1200px', margin: '0 auto' }}>
-        <div style={{ textAlign: 'center', marginBottom: '4rem' }}>
+        <div style={{ textAlign: 'center', marginBottom: '3rem' }}>
           <p className="serif" style={{ color: 'var(--primary)', textTransform: 'uppercase', letterSpacing: '0.2em', fontSize: '0.875rem', fontWeight: '600', marginBottom: '1rem' }}>{dictionary.tag}</p>
           <h2 className="serif" style={{ fontSize: 'max(2.5rem, 4vw)', fontWeight: '700' }}>{dictionary.title} <span style={{ color: 'var(--primary)' }}>{dictionary.titleAccent}</span></h2>
         </div>
 
-        <div style={{ display: 'grid', gridTemplateColumns: 'repeat(3, 1fr)', gap: '2rem' }}>
+        <div style={{ display: 'grid', gridTemplateColumns: 'repeat(3, 1fr)', gap: '1.5rem' }}>
           {servicesList.map((service, index) => (
             <motion.div 
               key={index}
@@ -38,7 +38,7 @@ const Services = ({ dictionary }: ServicesProps) => {
               viewport={{ once: true }}
               transition={{ duration: 0.6, delay: index * 0.1 }}
               style={{ 
-                padding: '3rem 2rem', 
+                padding: '2rem 1.75rem', 
                 backgroundColor: 'var(--surface-container-high)', 
                 borderRadius: '0.5rem',
                 border: '1px solid var(--outline-variant)',

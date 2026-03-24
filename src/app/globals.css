@@ -73,12 +73,12 @@ a:hover {
 }
 
 .section-spacing {
-  padding: 8.5rem 2rem;
+  padding: 4.5rem 2rem;
 }
 
 @media (max-width: 768px) {
   .section-spacing {
-    padding: 4rem 1.5rem;
+    padding: 2.5rem 1.5rem;
   }
 }
 

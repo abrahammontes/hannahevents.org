@@ -42,7 +42,7 @@ const Stats = ({ dictionary }: StatsProps) => {
         @media (max-width: 768px) {
           .section-spacing {
             grid-template-columns: 1fr !important;
-            gap: 4rem !important;
+            gap: 2rem !important;
           }
         }
       `}</style>

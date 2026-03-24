@@ -96,7 +96,7 @@ const Navbar = ({ dictionary, locale }: NavbarProps) => {
           onMouseEnter={(e) => e.currentTarget.style.backgroundColor = 'rgba(233, 193, 118, 0.1)'}
           onMouseLeave={(e) => e.currentTarget.style.backgroundColor = 'transparent'}
         >
-          {locale === 'es' ? 'EN' : 'ES'}
+          {locale === 'es' ? 'English' : 'Español'}
         </button>
 
         <Link href={`/${locale}#contacto`} className="gradient-btn" style={{ padding: '0.5rem 1.25rem', textDecoration: 'none' }}>

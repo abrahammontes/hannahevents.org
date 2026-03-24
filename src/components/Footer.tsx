@@ -30,11 +30,6 @@ const Footer = ({ dictionary }: FooterProps) => {
             <p style={{ opacity: 0.7, lineHeight: '1.7', marginBottom: '2rem' }}>
               {dictionary.description}
             </p>
-            <div style={{ display: 'flex', gap: '1.25rem' }}>
-              <Globe size={20} className="social-icon" />
-              <Briefcase size={20} className="social-icon" />
-              <MessageCircle size={20} className="social-icon" />
-            </div>
           </div>
           
           <div>

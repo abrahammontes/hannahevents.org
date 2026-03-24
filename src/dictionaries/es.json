@@ -52,16 +52,5 @@
     "location": "Guadalajara, Jalisco, México",
     "rights": "Derechos Reservados",
     "madeBy": "Hecho por"
-  },
-  "contactForm": {
-    "title": "Envíanos un Mensaje",
-    "name": "Nombre Completo",
-    "email": "Correo Electrónico",
-    "subject": "Asunto",
-    "message": "Mensaje",
-    "send": "Enviar Mensaje",
-    "sending": "Enviando...",
-    "success": "¡Mensaje enviado con éxito! Nos pondremos en contacto pronto.",
-    "error": "Hubo un error al enviar el mensaje. Por favor intenta de nuevo."
   }
 }
