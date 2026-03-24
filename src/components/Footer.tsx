@@ -52,7 +52,7 @@ const Footer = ({ dictionary }: FooterProps) => {
           
           <div>
             <h4 className="serif" style={{ fontSize: '1.125rem', marginBottom: '1.5rem' }}>{dictionary.contact}</h4>
-            <ul style={{ listStyle: 'none', padding: 0, display: 'flex', flexDirection: 'column', gap: '1rem' }}>
+            <ul className="footer-contacto-list" style={{ listStyle: 'none', padding: 0, display: 'flex', flexDirection: 'column', gap: '1rem' }}>
               <li style={{ display: 'flex', gap: '0.75rem', alignItems: 'center', opacity: 0.7 }}>
                 <Phone size={18} color="var(--primary)" /> 
                 <a href={`tel:${dictionary.phone.replace(/\s/g, '')}`} style={{ color: 'inherit' }}>

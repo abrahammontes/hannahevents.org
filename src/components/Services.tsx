@@ -55,6 +55,15 @@ const Services = ({ dictionary }: ServicesProps) => {
           border: 1px solid var(--outline-variant);
           transition: all 0.3s ease;
         }
+        
+        @media (max-width: 1024px) {
+          .service-card {
+            display: flex !important;
+            flex-direction: column !important;
+            align-items: center !important;
+            text-align: center !important;
+          }
+        }
       `}</style>
     </section>
   );
