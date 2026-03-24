@@ -41,6 +41,35 @@
       { "title": "Talleres y Encuentros", "desc": "Programas personalizados para fortalecer la cultura organizacional y el liderazgo." }
     ]
   },
+  "requestForm": {
+    "tag": "Solicitud de Evento",
+    "title": "Planea tu Próximo",
+    "titleAccent": "Gran Momento",
+    "description": "Cuéntanos sobre tu visión y nuestro equipo de expertos se encargará de hacerla realidad.",
+    "labels": {
+      "name": "Nombre / Empresa",
+      "email": "Correo Electrónico",
+      "phone": "Teléfono",
+      "eventType": "Tipo de Evento",
+      "date": "Fecha Estimada",
+      "guests": "Número de Invitados",
+      "message": "Detalles Adicionales"
+    },
+    "options": {
+      "corporate": "Evento Corporativo",
+      "activation": "Activación de Marca",
+      "workshop": "Taller o Encuentro",
+      "other": "Otro"
+    },
+    "placeholders": {
+      "name": "Ej. HannaH Events",
+      "email": "ejemplo@dominio.com",
+      "phone": "Tel: +52...",
+      "guests": "Ej. 100",
+      "message": "¿Cómo podemos ayudarte a destacar?"
+    },
+    "button": "Enviar Solicitud"
+  },
   "footer": {
     "description": "Transformamos ideas en experiencias estratégicas. Líderes en organización de eventos corporativos a nivel nacional e internacional.",
     "nav": "Navegación",

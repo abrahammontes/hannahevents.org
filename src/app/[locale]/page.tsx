@@ -3,6 +3,7 @@ import Hero from '@/components/Hero';
 import Stats from '@/components/Stats';
 import Services from '@/components/Services';
 import WhyChooseUs from '@/components/WhyChooseUs';
+import EventRequestForm from '@/components/EventRequestForm';
 import Footer from '@/components/Footer';
 import { getDictionary } from '@/dictionaries/dictionaries';
 
@@ -20,6 +21,7 @@ export default async function Home({
       <Stats dictionary={dictionary.stats} />
       <WhyChooseUs dictionary={dictionary.whyChooseUs} />
       <Services dictionary={dictionary.services} />
+      <EventRequestForm dictionary={dictionary.requestForm} />
       <Footer dictionary={dictionary.footer} />
     </main>
   );

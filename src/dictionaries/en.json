@@ -41,6 +41,35 @@
       { "title": "Workshops & Gatherings", "desc": "Custom programs to strengthen organizational culture and leadership." }
     ]
   },
+  "requestForm": {
+    "tag": "Event Request",
+    "title": "Plan Your Next",
+    "titleAccent": "Great Moment",
+    "description": "Tell us about your vision and our expert team will make it a reality.",
+    "labels": {
+      "name": "Name / Company",
+      "email": "Email Address",
+      "phone": "Phone Number",
+      "eventType": "Event Type",
+      "date": "Estimated Date",
+      "guests": "Number of Guests",
+      "message": "Additional Details"
+    },
+    "options": {
+      "corporate": "Corporate Event",
+      "activation": "Brand Activation",
+      "workshop": "Workshop or Meetup",
+      "other": "Other"
+    },
+    "placeholders": {
+      "name": "E.g. HannaH Events",
+      "email": "example@domain.com",
+      "phone": "Tel: +52...",
+      "guests": "E.g. 100",
+      "message": "How can we help you stand out?"
+    },
+    "button": "Send Request"
+  },
   "footer": {
     "description": "Transforming ideas into strategic experiences. Leaders in corporate event organization nationwide and internationally.",
     "nav": "Navigation",
