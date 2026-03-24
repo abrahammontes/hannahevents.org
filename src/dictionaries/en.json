@@ -37,7 +37,7 @@
     "titleAccent": "Detail",
     "list": [
       { "title": "Corporate Events", "desc": "Comprehensive design and production of strategic events for brands and institutions." },
-      { "title": "Brand Activations", "desc": "Immersive experiences that emotionally connect consumers with your purpose." },
+      { "title": "Brand Launches", "desc": "Immersive experiences that emotionally connect consumers with your purpose." },
       { "title": "Workshops & Gatherings", "desc": "Custom programs to strengthen organizational culture and leadership." }
     ]
   },
@@ -52,13 +52,26 @@
       "phone": "Phone Number",
       "eventType": "Event Type",
       "date": "Estimated Date",
-      "guests": "Number of Guests",
-      "message": "Additional Details"
+      "guests": "Guests",
+      "message": "Message",
+      "country": "Country"
     },
     "options": {
       "corporate": "Corporate Event",
-      "activation": "Brand Activation",
+      "activation": "Brand Launch",
       "workshop": "Workshop or Meetup",
+      "productLaunch": "Product Launch",
+      "galaDinner": "Gala Dinner",
+      "other": "Other"
+    },
+    "countries": {
+      "mx": "Mexico",
+      "us": "United States",
+      "es": "Spain",
+      "co": "Colombia",
+      "ar": "Argentina",
+      "cl": "Chile",
+      "pe": "Peru",
       "other": "Other"
     },
     "placeholders": {
@@ -68,7 +81,15 @@
       "guests": "E.g. 100",
       "message": "How can we help you stand out?"
     },
-    "button": "Send Request"
+    "button": "Send Request",
+    "status": {
+      "sending": "Sending...",
+      "success": "Request Sent Successfully!",
+      "successDesc": "We've sent a confirmation to your email. Our team will contact you soon.",
+      "error": "Error Sending",
+      "errorDesc": "There was a problem. Please try again or contact us directly.",
+      "retry": "Retry"
+    }
   },
   "footer": {
     "description": "Transforming ideas into strategic experiences. Leaders in corporate event organization nationwide and internationally.",
@@ -81,5 +102,45 @@
     "location": "Guadalajara, Jalisco, Mexico",
     "rights": "All Rights Reserved",
     "madeBy": "Made by"
+  },
+  "privacyPolicy": {
+    "title": "Privacy Policy",
+    "lastUpdated": "Last updated: March 2026",
+    "sections": [
+      {
+        "title": "1. Data Controller",
+        "content": "HannaH Events, located in Guadalajara, Jalisco, Mexico, is responsible for processing your personal data collected through hannahevents.org."
+      },
+      {
+        "title": "2. Data Collected",
+        "content": "We collect name, company, email, phone number, and country through our event request form for contact and quoting purposes."
+      },
+      {
+        "title": "3. Purpose",
+        "content": "Your data will be used exclusively to manage your event request, send you the required information, and maintain professional communication."
+      },
+      {
+        "title": "4. Privacy Rights",
+        "content": "You may exercise your rights of Access, Rectification, Cancellation, or Opposition by sending an email to contacto@hannahevents.org."
+      }
+    ]
+  },
+  "legalNotice": {
+    "title": "Legal Notice",
+    "lastUpdated": "Last updated: March 2026",
+    "sections": [
+      {
+        "title": "1. General Information",
+        "content": "In compliance with transparency standards, please be advised that this website is operated by HannaH Events, leaders in corporate event organization."
+      },
+      {
+        "title": "2. Intellectual Property",
+        "content": "All content, logos, and designs on this site are the property of HannaH Events. Total or partial reproduction without prior authorization is prohibited."
+      },
+      {
+        "title": "3. Limitation of Liability",
+        "content": "HannaH Events is not responsible for interruptions in web service or damages resulting from third-party misuse of the site."
+      }
+    ]
   }
 }

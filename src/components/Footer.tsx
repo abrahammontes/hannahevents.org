@@ -23,7 +23,7 @@ const Footer = ({ dictionary }: FooterProps) => {
   return (
     <footer id="contacto" style={{ backgroundColor: 'rgba(10, 10, 10, 0.8)', backdropFilter: 'blur(20px)', borderTop: '1px solid var(--outline-variant)', color: 'var(--foreground)', position: 'relative', zIndex: 10 }}>
       <div className="section-spacing" style={{ maxWidth: '1200px', margin: '0 auto' }}>
-        <div style={{ display: 'grid', gridTemplateColumns: '1.5fr 1fr 1fr 1fr', gap: '4rem' }}>
+        <div className="responsive-grid desktop-grid-footer" style={{ gap: '4rem' }}>
           
           <div className="footer-brand">
             <img src="/images/logo.png" alt="HANNAH EVENTS" style={{ height: '100px', objectFit: 'contain', marginBottom: '1.5rem' }} />
@@ -54,7 +54,10 @@ const Footer = ({ dictionary }: FooterProps) => {
             <h4 className="serif" style={{ fontSize: '1.125rem', marginBottom: '1.5rem' }}>{dictionary.contact}</h4>
             <ul style={{ listStyle: 'none', padding: 0, display: 'flex', flexDirection: 'column', gap: '1rem' }}>
               <li style={{ display: 'flex', gap: '0.75rem', alignItems: 'center', opacity: 0.7 }}>
-                <Phone size={18} color="var(--primary)" /> <span>{dictionary.phone}</span>
+                <Phone size={18} color="var(--primary)" /> 
+                <a href={`tel:${dictionary.phone.replace(/\s/g, '')}`} style={{ color: 'inherit' }}>
+                  {dictionary.phone}
+                </a>
               </li>
               <li style={{ display: 'flex', gap: '0.75rem', alignItems: 'center', opacity: 0.7 }}>
                 <MessageCircle size={18} color="var(--primary)" /> 
@@ -81,26 +84,6 @@ const Footer = ({ dictionary }: FooterProps) => {
           </p>
         </div>
       </div>
-      <style jsx>{`
-        .social-icon {
-          cursor: pointer;
-          transition: color 0.3s ease;
-        }
-        .social-icon:hover {
-          color: var(--primary);
-        }
-        @media (max-width: 992px) {
-          div[style*="gridTemplateColumns"] {
-            grid-template-columns: 1fr 1fr !important;
-            gap: 2rem !important;
-          }
-        }
-        @media (max-width: 600px) {
-          div[style*="gridTemplateColumns"] {
-            grid-template-columns: 1fr !important;
-          }
-        }
-      `}</style>
     </footer>
   );
 };

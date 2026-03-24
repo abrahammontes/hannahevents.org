@@ -37,7 +37,7 @@
     "titleAccent": "Detalle",
     "list": [
       { "title": "Eventos Corporativos", "desc": "Diseño integral y producción de eventos estratégicos para marcas e instituciones." },
-      { "title": "Activaciones de Marca", "desc": "Experiencias inmersivas que conectan emocionalmente a los consumidores con tu propósito." },
+      { "title": "Lanzamiento de Marca", "desc": "Experiencias inmersivas que conectan emocionalmente a los consumidores con tu propósito." },
       { "title": "Talleres y Encuentros", "desc": "Programas personalizados para fortalecer la cultura organizacional y el liderazgo." }
     ]
   },
@@ -53,12 +53,25 @@
       "eventType": "Tipo de Evento",
       "date": "Fecha Estimada",
       "guests": "Número de Invitados",
-      "message": "Detalles Adicionales"
+      "message": "Detalles Adicionales",
+      "country": "País"
     },
     "options": {
       "corporate": "Evento Corporativo",
-      "activation": "Activación de Marca",
+      "activation": "Lanzamiento de Marca",
       "workshop": "Taller o Encuentro",
+      "productLaunch": "Lanzamiento de Producto",
+      "galaDinner": "Cena de Gala",
+      "other": "Otro"
+    },
+    "countries": {
+      "mx": "México",
+      "us": "Estados Unidos",
+      "es": "España",
+      "co": "Colombia",
+      "ar": "Argentina",
+      "cl": "Chile",
+      "pe": "Perú",
       "other": "Otro"
     },
     "placeholders": {
@@ -68,7 +81,15 @@
       "guests": "Ej. 100",
       "message": "¿Cómo podemos ayudarte a destacar?"
     },
-    "button": "Enviar Solicitud"
+    "button": "Enviar Solicitud",
+    "status": {
+      "sending": "Enviando...",
+      "success": "¡Solicitud Enviada con Éxito!",
+      "successDesc": "Hemos enviado una confirmación a tu correo. Nuestro equipo te contactará pronto.",
+      "error": "Error al Enviar",
+      "errorDesc": "Hubo un problema. Por favor intenta de nuevo o contáctanos directamente.",
+      "retry": "Reintentar"
+    }
   },
   "footer": {
     "description": "Transformamos ideas en experiencias estratégicas. Líderes en organización de eventos corporativos a nivel nacional e internacional.",
@@ -81,5 +102,45 @@
     "location": "Guadalajara, Jalisco, México",
     "rights": "Derechos Reservados",
     "madeBy": "Hecho por"
+  },
+  "privacyPolicy": {
+    "title": "Política de Privacidad",
+    "lastUpdated": "Última actualización: Marzo 2026",
+    "sections": [
+      {
+        "title": "1. Responsable del Tratamiento",
+        "content": "HannaH Events, con domicilio en Guadalajara, Jalisco, México, es responsable del tratamiento de sus datos personales recolectados a través de hannahevents.org."
+      },
+      {
+        "title": "2. Datos Recolectados",
+        "content": "Recopilamos nombre, empresa, correo electrónico, teléfono y país a través de nuestro formulario de solicitud de eventos para fines de contacto y presupuestación."
+      },
+      {
+        "title": "3. Finalidad",
+        "content": "Sus datos se utilizarán exclusivamente para gestionar su solicitud de evento, enviarle la información requerida y mantener una comunicación profesional."
+      },
+      {
+        "title": "4. Derechos ARCO",
+        "content": "Usted puede ejercer sus derechos de Acceso, Rectificación, Cancelación u Oposición enviando un correo a contacto@hannahevents.org."
+      }
+    ]
+  },
+  "legalNotice": {
+    "title": "Aviso Legal",
+    "lastUpdated": "Última actualización: Marzo 2026",
+    "sections": [
+      {
+        "title": "1. Información General",
+        "content": "En cumplimiento con los estándares de transparencia, se informa que este sitio web es operado por HannaH Events, líderes en la organización de eventos corporativos."
+      },
+      {
+        "title": "2. Propiedad Intelectual",
+        "content": "Todos los contenidos, logotipos y diseños en este sitio son propiedad de HannaH Events. Queda prohibida su reproducción total o parcial sin autorización previa."
+      },
+      {
+        "title": "3. Limitación de Responsabilidad",
+        "content": "HannaH Events no se hace responsable de las interrupciones en el servicio web o de daños derivados del mal uso del sitio por parte de terceros."
+      }
+    ]
   }
 }

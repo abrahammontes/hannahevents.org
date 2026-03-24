@@ -20,7 +20,7 @@ const Stats = ({ dictionary }: StatsProps) => {
 
   return (
     <section className="stats" style={{ backgroundColor: 'rgba(28, 27, 27, 0.4)', backdropFilter: 'blur(5px)', borderTop: '1px solid var(--outline-variant)', borderBottom: '1px solid var(--outline-variant)' }}>
-      <div className="section-spacing" style={{ display: 'grid', gridTemplateColumns: 'repeat(3, 1fr)', gap: '2rem', textAlign: 'center' }}>
+      <div className="section-spacing responsive-grid" style={{ maxWidth: '1200px', margin: '0 auto', textAlign: 'center' }}>
         {statsList.map((stat, index) => (
           <motion.div 
             key={index}
@@ -29,7 +29,7 @@ const Stats = ({ dictionary }: StatsProps) => {
             viewport={{ once: true }}
             transition={{ duration: 0.6, delay: index * 0.1 }}
           >
-            <h2 className="serif" style={{ fontSize: '3.5rem', fontWeight: '700', color: 'var(--primary)', marginBottom: '0.5rem' }}>
+            <h2 className="serif stats-value" style={{ fontWeight: '700', color: 'var(--primary)', marginBottom: '0.5rem' }}>
               {stat.value}
             </h2>
             <p style={{ fontSize: '1rem', textTransform: 'uppercase', letterSpacing: '0.1em', opacity: 0.8, fontWeight: '500' }}>

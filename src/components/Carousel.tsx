@@ -25,21 +25,39 @@ const Carousel = () => {
   const prev = () => setCurrentIndex((prev) => (prev - 1 + images.length) % images.length);
 
   return (
-    <div style={{ position: 'relative', width: '100%', height: '500px', overflow: 'hidden', borderRadius: '1rem', marginTop: '4rem' }}>
-      <AnimatePresence mode="wait">
+    <div className="carousel-container" style={{ position: 'relative', width: '100%', borderRadius: '1rem', marginTop: '4rem', overflow: 'hidden' }}>
+      <AnimatePresence mode="popLayout">
         <motion.img
           key={currentIndex}
           src={images[currentIndex]}
-          initial={{ opacity: 0, scale: 1.1 }}
+          initial={{ opacity: 0, scale: 1.05 }}
           animate={{ opacity: 1, scale: 1 }}
           exit={{ opacity: 0, scale: 0.95 }}
-          transition={{ duration: 1, ease: 'easeInOut' }}
-          style={{ width: '100%', height: '100%', objectFit: 'cover', position: 'absolute' }}
+          transition={{ duration: 0.8, ease: 'easeInOut' }}
+          style={{ width: '100%', height: '100%', objectFit: 'cover', position: 'absolute', inset: 0 }}
         />
       </AnimatePresence>
       
       {/* Overlay */}
-      <div style={{ position: 'absolute', inset: 0, background: 'linear-gradient(to top, rgba(0,0,0,0.6) 0%, transparent 50%)', pointerEvents: 'none' }}></div>
+      <div style={{ position: 'absolute', inset: 0, background: 'linear-gradient(to top, rgba(0,0,0,0.4) 0%, transparent 50%)', pointerEvents: 'none' }}></div>
+
+      <style jsx>{`
+        .carousel-container {
+          aspect-ratio: 16 / 9;
+          height: auto;
+        }
+        @media (max-width: 768px) {
+          .carousel-container {
+            aspect-ratio: 4 / 3;
+            min-height: 350px;
+          }
+        }
+        @media (min-width: 1400px) {
+          .carousel-container {
+            height: 600px;
+          }
+        }
+      `}</style>
 
       {/* Controls */}
       <button 

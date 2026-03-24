@@ -29,7 +29,7 @@ const Services = ({ dictionary }: ServicesProps) => {
           <h2 className="serif" style={{ fontSize: 'max(2.5rem, 4vw)', fontWeight: '700' }}>{dictionary.title} <span style={{ color: 'var(--primary)' }}>{dictionary.titleAccent}</span></h2>
         </div>
 
-        <div style={{ display: 'grid', gridTemplateColumns: 'repeat(3, 1fr)', gap: '1.5rem' }}>
+        <div className="responsive-grid">
           {servicesList.map((service, index) => (
             <motion.div 
               key={index}
@@ -37,13 +37,7 @@ const Services = ({ dictionary }: ServicesProps) => {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.6, delay: index * 0.1 }}
-              style={{ 
-                padding: '2rem 1.75rem', 
-                backgroundColor: 'var(--surface-container-high)', 
-                borderRadius: '0.5rem',
-                border: '1px solid var(--outline-variant)',
-                transition: 'all 0.3s ease',
-              }}
+              className="service-card"
               whileHover={{ y: -10, borderColor: 'var(--primary)' }}
             >
               <div style={{ marginBottom: '1.5rem' }}>{service.icon}</div>
@@ -54,15 +48,12 @@ const Services = ({ dictionary }: ServicesProps) => {
         </div>
       </div>
       <style jsx>{`
-        @media (max-width: 992px) {
-          div[style*="gridTemplateColumns"] {
-            grid-template-columns: 1fr 1fr !important;
-          }
-        }
-        @media (max-width: 600px) {
-          div[style*="gridTemplateColumns"] {
-            grid-template-columns: 1fr !important;
-          }
+        .service-card {
+          padding: 2rem 1.75rem;
+          background-color: var(--surface-container-high);
+          border-radius: 0.5rem;
+          border: 1px solid var(--outline-variant);
+          transition: all 0.3s ease;
         }
       `}</style>
     </section>

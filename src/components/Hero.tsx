@@ -22,7 +22,8 @@ const Hero = ({ dictionary }: HeroProps) => {
         style={{ 
           textAlign: 'center', 
           maxWidth: '900px', 
-          padding: '0 2rem', 
+          padding: '0 1.5rem', 
+          paddingTop: '4rem',
           zIndex: 10,
           position: 'relative'
         }}
@@ -40,7 +41,9 @@ const Hero = ({ dictionary }: HeroProps) => {
             fontWeight: '700'
           }}
         >
-          {dictionary.title} <span style={{ color: 'var(--primary)' }}>{dictionary.titleAccent}</span>
+          <span className="hero-title">
+            {dictionary.title} <span style={{ color: 'var(--primary)' }}>{dictionary.titleAccent}</span>
+          </span>
         </motion.h1>
         
         <motion.p 
@@ -56,14 +59,14 @@ const Hero = ({ dictionary }: HeroProps) => {
             letterSpacing: '0.02em'
           }}
         >
-          {dictionary.description}
+          <span className="hero-description">{dictionary.description}</span>
         </motion.p>
         
         <motion.div
            initial={{ opacity: 0, y: 20 }}
            animate={{ opacity: 1, y: 0 }}
            transition={{ duration: 0.8, delay: 0.4, ease: "easeOut" }}
-           style={{ display: 'flex', gap: '1.5rem', justifyContent: 'center' }}
+           className="hero-btns"
         >
           <button className="gradient-btn" style={{ padding: '1rem 2.5rem', fontSize: '1rem' }}>{dictionary.ctaPrimary}</button>
           <button style={{ 
@@ -80,7 +83,6 @@ const Hero = ({ dictionary }: HeroProps) => {
           }}>{dictionary.ctaSecondary}</button>
         </motion.div>
       </div>
-
       <div style={{
         position: 'absolute',
         bottom: '2rem',
@@ -104,6 +106,7 @@ const Hero = ({ dictionary }: HeroProps) => {
           />
         </div>
       </div>
+
     </section>
   );
 };

@@ -3,6 +3,7 @@
 import React, { useState, useEffect } from 'react';
 import Link from 'next/link';
 import { Menu, X } from 'lucide-react';
+import { motion, AnimatePresence } from 'framer-motion';
 
 interface NavbarProps {
   dictionary: {
@@ -28,43 +29,41 @@ const Navbar = ({ dictionary, locale }: NavbarProps) => {
   }, []);
 
   const navLinks = [
-    { name: dictionary.home, href: `/${locale}` },
-    { name: dictionary.about, href: `/${locale}#quienes-somos` },
-    { name: dictionary.services, href: `/${locale}#servicios` },
-    { name: dictionary.contact, href: `/${locale}#contacto` },
+    { name: dictionary.home, href: '/' },
+    { name: dictionary.about, href: '#quienes-somos' },
+    { name: dictionary.services, href: '#servicios' },
+    { name: dictionary.contact, href: '#contacto' },
   ];
 
   const toggleLanguage = () => {
     const nextLocale = locale === 'es' ? 'en' : 'es';
-    const currentPath = window.location.pathname;
-    // Basic replacement for the root locale segment
-    const segments = currentPath.split('/');
-    segments[1] = nextLocale;
-    const newPath = segments.join('/');
-    window.location.href = newPath;
+    // Set cookie for middleware to see
+    document.cookie = `NEXT_LOCALE=${nextLocale}; path=/; max-age=31536000`;
+    // Refresh to trigger middleware rewrite
+    window.location.reload();
   };
 
   return (
     <nav 
-      className={isScrolled ? 'glass' : ''} 
+      className={`navbar ${isScrolled ? 'scrolled glass' : ''}`}
       style={{ 
         position: 'fixed',
         top: 0,
         left: 0,
         right: 0,
         zIndex: 1000,
-        padding: isScrolled ? '1rem 4rem' : '2rem 4rem',
-        backgroundColor: isScrolled ? 'rgba(28, 27, 27, 0.8)' : 'rgba(0, 0, 0, 0.4)',
+        padding: isScrolled ? '1rem 4rem' : '1.5rem 4rem',
+        backgroundColor: isScrolled ? 'rgba(28, 27, 27, 0.95)' : 'rgba(0, 0, 0, 0.4)',
         backdropFilter: 'blur(10px)',
         transition: 'all 0.4s ease',
         display: 'flex',
         justifyContent: 'space-between',
         alignItems: 'center',
-        boxShadow: isScrolled ? '0 10px 30px rgba(0,0,0,0.3)' : 'none'
+        boxShadow: isScrolled ? '0 10px 30px rgba(0,0,0,0.5)' : 'none'
       }}
     >
       <div className="logo">
-        <Link href={`/${locale}`}>
+        <Link href="/">
           <img src="/images/logo.png" alt="HANNAH EVENTS" style={{ height: '80px', objectFit: 'contain', transition: 'height 0.3s ease' }} />
         </Link>
       </div>
@@ -77,7 +76,6 @@ const Navbar = ({ dictionary, locale }: NavbarProps) => {
           </Link>
         ))}
         
-        {/* Language Switcher */}
         <button 
           onClick={toggleLanguage}
           style={{ 
@@ -93,26 +91,101 @@ const Navbar = ({ dictionary, locale }: NavbarProps) => {
             cursor: 'pointer',
             transition: 'background-color 0.3s ease'
           }}
-          onMouseEnter={(e) => e.currentTarget.style.backgroundColor = 'rgba(233, 193, 118, 0.1)'}
-          onMouseLeave={(e) => e.currentTarget.style.backgroundColor = 'transparent'}
         >
           {locale === 'es' ? 'English' : 'Español'}
         </button>
 
-        <Link href={`/${locale}#contacto`} className="gradient-btn" style={{ padding: '0.5rem 1.25rem', textDecoration: 'none' }}>
+        <Link href="#contacto" className="gradient-btn" style={{ padding: '0.5rem 1.25rem', textDecoration: 'none' }}>
           {dictionary.cta}
         </Link>
       </div>
 
-      {/* Mobile Menu Toggle (Simplified for now) */}
-      <div className="mobile-toggle" style={{ display: 'none' }}>
-        <button onClick={() => setMobileMenuOpen(!mobileMenuOpen)}>
-          {mobileMenuOpen ? <X color="var(--foreground)" /> : <Menu color="var(--foreground)" />}
+      {/* Mobile Menu Toggle */}
+      <div className="mobile-toggle">
+        <button 
+          onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
+          style={{ background: 'none', border: 'none', cursor: 'pointer', zIndex: 1100, position: 'relative' }}
+        >
+          {mobileMenuOpen ? <X color="var(--foreground)" size={32} /> : <Menu color="var(--foreground)" size={32} />}
         </button>
       </div>
 
+      {/* Mobile Menu Overlay */}
+      <AnimatePresence>
+        {mobileMenuOpen && (
+          <motion.div
+            initial={{ opacity: 0, x: '100%' }}
+            animate={{ opacity: 1, x: 0 }}
+            exit={{ opacity: 0, x: '100%' }}
+            transition={{ type: 'spring', damping: 25, stiffness: 200 }}
+            style={{
+              position: 'fixed',
+              top: 0,
+              right: 0,
+              width: '100%',
+              height: '100vh',
+              backgroundColor: 'rgba(19, 19, 19, 0.98)',
+              backdropFilter: 'blur(20px)',
+              zIndex: 1050,
+              display: 'flex',
+              flexDirection: 'column',
+              padding: '8rem 2rem 2rem'
+            }}
+          >
+            <div style={{ display: 'flex', flexDirection: 'column', gap: '2rem' }}>
+              {navLinks.map((link) => (
+                <Link 
+                  key={link.name} 
+                  href={link.href}
+                  onClick={() => setMobileMenuOpen(false)}
+                  style={{ fontSize: '2rem', fontWeight: '600', textTransform: 'uppercase', letterSpacing: '0.05em', color: 'var(--foreground)' }}
+                >
+                  {link.name}
+                </Link>
+              ))}
+              
+              <div style={{ marginTop: '2rem', display: 'flex', flexDirection: 'column', gap: '1.5rem' }}>
+                <button 
+                  onClick={() => { toggleLanguage(); setMobileMenuOpen(false); }}
+                  style={{ 
+                    fontSize: '1rem', 
+                    fontWeight: 'bold', 
+                    padding: '1rem', 
+                    borderRadius: '8px', 
+                    border: '1px solid var(--primary)',
+                    backgroundColor: 'transparent',
+                    color: 'var(--primary)',
+                    textAlign: 'center'
+                  }}
+                >
+                  {locale === 'es' ? 'Switch to English' : 'Cambiar a Español'}
+                </button>
+                
+                <Link 
+                  href="#contacto" 
+                  className="gradient-btn" 
+                  onClick={() => setMobileMenuOpen(false)}
+                  style={{ padding: '1rem', textAlign: 'center', textDecoration: 'none' }}
+                >
+                  {dictionary.cta}
+                </Link>
+              </div>
+            </div>
+          </motion.div>
+        )}
+      </AnimatePresence>
+
       <style jsx>{`
-        @media (max-width: 768px) {
+        .mobile-toggle {
+          display: none;
+        }
+        @media (max-width: 1024px) {
+          nav {
+            padding: 1rem 1.5rem !important;
+          }
+          .logo img {
+            height: 60px !important;
+          }
           .desktop-links {
             display: none !important;
           }

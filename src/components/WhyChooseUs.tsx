@@ -29,7 +29,7 @@ const WhyChooseUs = ({ dictionary }: WhyChooseUsProps) => {
   return (
     <section id="quienes-somos" style={{ backgroundColor: 'rgba(14, 14, 14, 0.6)', backdropFilter: 'blur(10px)' }}>
       <div className="section-spacing" style={{ maxWidth: '1200px', margin: '0 auto' }}>
-        <div style={{ display: 'flex', gap: '2.5rem', alignItems: 'center', marginBottom: '2.5rem' }}>
+        <div className="responsive-flex" style={{ display: 'flex', gap: '2.5rem', alignItems: 'center', marginBottom: '2.5rem' }}>
           <div style={{ flex: 1 }}>
             <p className="serif" style={{ color: 'var(--primary)', textTransform: 'uppercase', letterSpacing: '0.2em', fontSize: '0.875rem', fontWeight: '600', marginBottom: '1rem' }}>{dictionary.tag}</p>
             <h2 className="serif" style={{ fontSize: 'max(2.5rem, 4vw)', fontWeight: '700', marginBottom: '2rem', lineHeight: '1.2' }}>
@@ -43,7 +43,7 @@ const WhyChooseUs = ({ dictionary }: WhyChooseUsProps) => {
             </Link>
           </div>
 
-          <div style={{ flex: 1.2, display: 'grid', gridTemplateColumns: 'repeat(2, 1fr)', gap: '1.5rem' }}>
+          <div className="responsive-grid" style={{ flex: 1.2 }}>
             {highlights.map((h, i) => (
               <motion.div 
                 key={i}
@@ -51,12 +51,7 @@ const WhyChooseUs = ({ dictionary }: WhyChooseUsProps) => {
                 whileInView={{ opacity: 1, x: 0 }}
                 viewport={{ once: true }}
                 transition={{ duration: 0.5, delay: i * 0.1 }}
-                style={{ 
-                  padding: '2.5rem', 
-                  backgroundColor: 'var(--surface-container-low)', 
-                  borderRadius: '0.5rem',
-                  border: '1px solid var(--outline-variant)'
-                }}
+                className="highlight-card"
               >
                 <div style={{ color: 'var(--primary)', marginBottom: '1.25rem' }}>{h.icon}</div>
                 <h4 className="serif" style={{ fontSize: '1.25rem', marginBottom: '0.75rem' }}>{h.title}</h4>
@@ -69,18 +64,20 @@ const WhyChooseUs = ({ dictionary }: WhyChooseUsProps) => {
         <Carousel />
       </div>
       <style jsx>{`
-        @media (max-width: 992px) {
-          .section-spacing {
+        .highlight-card {
+          padding: 2.5rem;
+          background-color: var(--surface-container-low);
+          border-radius: 0.5rem;
+          border: 1px solid var(--outline-variant);
+        }
+        @media (max-width: 1024px) {
+          .responsive-flex {
             flex-direction: column !important;
             text-align: center;
           }
-          div[style*="gridTemplateColumns"] {
+          div[style*="flex"] {
+            flex: none !important;
             width: 100%;
-          }
-        }
-        @media (max-width: 600px) {
-          div[style*="gridTemplateColumns"] {
-            grid-template-columns: 1fr !important;
           }
         }
       `}</style>
