@@ -126,7 +126,7 @@ const EventRequestForm = ({ dictionary }: EventRequestFormProps) => {
 
   return (
     <section id="contacto" className="section-spacing" style={{ backgroundColor: 'transparent', position: 'relative', overflow: 'hidden' }}>
-      <div style={{ maxWidth: '1000px', margin: '0 auto', position: 'relative', zIndex: 1 }}>
+      <div style={{ maxWidth: '1200px', margin: '0 auto', position: 'relative', zIndex: 1 }}>
         <div style={{ textAlign: 'center', marginBottom: '4rem' }}>
           <p className="serif" style={{ color: 'var(--primary)', textTransform: 'uppercase', letterSpacing: '0.2em', fontSize: '0.875rem', fontWeight: '600', marginBottom: '1rem' }}>
             {dictionary.tag}
@@ -145,9 +145,9 @@ const EventRequestForm = ({ dictionary }: EventRequestFormProps) => {
         whileInView={{ opacity: 1, y: 0 }}
         viewport={{ once: true }}
         transition={{ duration: 0.8 }}
-        className="glass form-grid"
+        className="glass"
         style={{ 
-          maxWidth: '1000px', 
+          maxWidth: '1200px', 
           margin: '0 auto', 
           padding: '3rem', 
           borderRadius: '1.5rem',
