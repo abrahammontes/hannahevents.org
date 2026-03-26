@@ -5,10 +5,12 @@ import { motion, AnimatePresence } from 'framer-motion';
 import { ChevronLeft, ChevronRight } from 'lucide-react';
 
 const images = [
-  '/images/event1.png',
-  '/images/event2.png',
-  '/images/event3.png',
-  '/images/event4.png'
+  '/images/carousel-new-1.jpg',
+  '/images/carousel-new-2.jpg',
+  '/images/carousel-new-3.jpg',
+  '/images/carousel-new-4.jpg',
+  '/images/carousel-new-5.jpg',
+  '/images/carousel-new-6.jpg'
 ];
 
 const Carousel = () => {
