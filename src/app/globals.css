@@ -3,14 +3,14 @@
 :root {
   --background: #131313;
   --foreground: #e5e2e1;
-  --primary: #e9c176;
-  --primary-container: #c5a059;
+  --primary: #C5ADC5;
+  --primary-container: #B2B5E0;
   --surface: #131313;
   --surface-container-low: #1c1b1b;
   --surface-container-high: #2a2a2a;
   --surface-container-highest: #353534;
-  --outline: #9a8f80;
-  --outline-variant: rgba(78, 193, 118, 0.15); /* Slightly Adjusted for Brand Consistency */
+  --outline: #C5ADC5;
+  --outline-variant: rgba(197, 173, 197, 0.15); 
   
   --font-serif: 'Noto Serif', serif;
   --font-sans: 'Manrope', sans-serif;

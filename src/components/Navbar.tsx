@@ -83,7 +83,7 @@ const Navbar = ({ dictionary, locale }: NavbarProps) => {
             fontWeight: 'bold', 
             textTransform: 'uppercase', 
             letterSpacing: '0.1em', 
-            border: '1px solid rgba(233, 193, 118, 0.3)', 
+            border: '1px solid rgba(197, 173, 197, 0.3)', 
             padding: '0.25rem 0.75rem', 
             borderRadius: '4px', 
             backgroundColor: 'transparent',

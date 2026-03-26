@@ -97,7 +97,7 @@ const EventRequestForm = ({ dictionary }: EventRequestFormProps) => {
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     setStatus('sending');
-    
+
     try {
       const response = await fetch('/api/send-email', {
         method: 'POST',
@@ -140,23 +140,23 @@ const EventRequestForm = ({ dictionary }: EventRequestFormProps) => {
         </div>
 
         {/* Glass Container */}
-      <motion.div 
-        initial={{ opacity: 0, y: 30 }}
-        whileInView={{ opacity: 1, y: 0 }}
-        viewport={{ once: true }}
-        transition={{ duration: 0.8 }}
-        className="glass"
-        style={{ 
-          maxWidth: '1200px', 
-          margin: '0 auto', 
-          padding: '3rem', 
-          borderRadius: '1.5rem',
-          border: '1px solid var(--outline-variant)',
-          marginBottom: '1.5rem' 
-        }}
-      >
+        <motion.div
+          initial={{ opacity: 0, y: 30 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.8 }}
+          className="glass"
+          style={{
+            maxWidth: '1200px',
+            margin: '0 auto',
+            padding: '3rem',
+            borderRadius: '1.5rem',
+            border: '1px solid var(--outline-variant)',
+            marginBottom: '1.5rem'
+          }}
+        >
           {status === 'success' ? (
-            <motion.div 
+            <motion.div
               initial={{ opacity: 0, scale: 0.9 }}
               animate={{ opacity: 1, scale: 1 }}
               style={{ textAlign: 'center', padding: '2rem' }}
@@ -166,7 +166,7 @@ const EventRequestForm = ({ dictionary }: EventRequestFormProps) => {
               </div>
               <h3 className="serif" style={{ fontSize: '2rem', marginBottom: '1rem' }}>{dictionary.status.success}</h3>
               <p style={{ opacity: 0.8, marginBottom: '2rem' }}>{dictionary.status.successDesc}</p>
-              <button 
+              <button
                 onClick={() => setStatus('idle')}
                 className="gradient-btn"
                 style={{ padding: '0.75rem 2rem' }}
@@ -175,14 +175,14 @@ const EventRequestForm = ({ dictionary }: EventRequestFormProps) => {
               </button>
             </motion.div>
           ) : status === 'error' ? (
-            <motion.div 
+            <motion.div
               initial={{ opacity: 0, scale: 0.9 }}
               animate={{ opacity: 1, scale: 1 }}
               style={{ textAlign: 'center', padding: '2rem' }}
             >
               <h3 className="serif" style={{ fontSize: '2rem', marginBottom: '1rem', color: '#ff4d4d' }}>{dictionary.status.error}</h3>
               <p style={{ opacity: 0.8, marginBottom: '2rem' }}>{dictionary.status.errorDesc}</p>
-              <button 
+              <button
                 onClick={() => setStatus('idle')}
                 className="gradient-btn"
                 style={{ padding: '0.75rem 2rem' }}
@@ -191,16 +191,16 @@ const EventRequestForm = ({ dictionary }: EventRequestFormProps) => {
               </button>
             </motion.div>
           ) : (
-            <form onSubmit={handleSubmit} className="REALLY_STACK_THIS_FORM_PLEASE" style={{ 
-              opacity: status === 'sending' ? 0.5 : 1, 
-              pointerEvents: status === 'sending' ? 'none' : 'auto' 
+            <form onSubmit={handleSubmit} className="REALLY_STACK_THIS_FORM_PLEASE" style={{
+              opacity: status === 'sending' ? 0.5 : 1,
+              pointerEvents: status === 'sending' ? 'none' : 'auto'
             }}>
               <div className="form-group" style={{ display: 'flex', flexDirection: 'column', gap: '0.5rem' }}>
                 <label style={{ fontSize: '0.85rem', fontWeight: '600', opacity: 0.9, display: 'flex', alignItems: 'center', gap: '0.5rem' }}>
                   <User size={14} color="var(--primary)" /> {dictionary.labels.name}
                 </label>
-                <input 
-                  type="text" 
+                <input
+                  type="text"
                   name="name"
                   placeholder={dictionary.placeholders.name}
                   required
@@ -214,8 +214,8 @@ const EventRequestForm = ({ dictionary }: EventRequestFormProps) => {
                 <label style={{ fontSize: '0.85rem', fontWeight: '600', opacity: 0.9, display: 'flex', alignItems: 'center', gap: '0.5rem' }}>
                   <Mail size={14} color="var(--primary)" /> {dictionary.labels.email}
                 </label>
-                <input 
-                  type="email" 
+                <input
+                  type="email"
                   name="email"
                   placeholder={dictionary.placeholders.email}
                   required
@@ -229,8 +229,8 @@ const EventRequestForm = ({ dictionary }: EventRequestFormProps) => {
                 <label style={{ fontSize: '0.85rem', fontWeight: '600', opacity: 0.9, display: 'flex', alignItems: 'center', gap: '0.5rem' }}>
                   <Phone size={14} color="var(--primary)" /> {dictionary.labels.phone}
                 </label>
-                <input 
-                  type="tel" 
+                <input
+                  type="tel"
                   name="phone"
                   placeholder={dictionary.placeholders.phone}
                   value={formData.phone}
@@ -243,21 +243,21 @@ const EventRequestForm = ({ dictionary }: EventRequestFormProps) => {
                 <label style={{ fontSize: '0.85rem', fontWeight: '600', opacity: 0.9, display: 'flex', alignItems: 'center', gap: '0.5rem' }}>
                   <Star size={14} color="var(--primary)" /> {dictionary.labels.country}
                 </label>
-                <select 
+                <select
                   name="country"
                   required
                   value={formData.country}
                   onChange={handleChange}
                   style={{ ...inputStyle, appearance: 'none' }}
                 >
-                  <option value="mx" style={{ backgroundColor: '#1c1b1b' }}>{dictionary.countries.mx}</option>
-                  <option value="us" style={{ backgroundColor: '#1c1b1b' }}>{dictionary.countries.us}</option>
-                  <option value="es" style={{ backgroundColor: '#1c1b1b' }}>{dictionary.countries.es}</option>
-                  <option value="co" style={{ backgroundColor: '#1c1b1b' }}>{dictionary.countries.co}</option>
-                  <option value="ar" style={{ backgroundColor: '#1c1b1b' }}>{dictionary.countries.ar}</option>
-                  <option value="cl" style={{ backgroundColor: '#1c1b1b' }}>{dictionary.countries.cl}</option>
-                  <option value="pe" style={{ backgroundColor: '#1c1b1b' }}>{dictionary.countries.pe}</option>
-                  <option value="other" style={{ backgroundColor: '#1c1b1b' }}>{dictionary.countries.other}</option>
+                  <option value="mx" style={{ backgroundColor: 'rgb(28, 27, 27)' }}>{dictionary.countries.mx}</option>
+                  <option value="us" style={{ backgroundColor: 'rgb(28, 27, 27)' }}>{dictionary.countries.us}</option>
+                  <option value="es" style={{ backgroundColor: 'rgb(28, 27, 27)' }}>{dictionary.countries.es}</option>
+                  <option value="co" style={{ backgroundColor: 'rgb(28, 27, 27)' }}>{dictionary.countries.co}</option>
+                  <option value="ar" style={{ backgroundColor: 'rgb(28, 27, 27)' }}>{dictionary.countries.ar}</option>
+                  <option value="cl" style={{ backgroundColor: 'rgb(28, 27, 27)' }}>{dictionary.countries.cl}</option>
+                  <option value="pe" style={{ backgroundColor: 'rgb(28, 27, 27)' }}>{dictionary.countries.pe}</option>
+                  <option value="other" style={{ backgroundColor: 'rgb(28, 27, 27)' }}>{dictionary.countries.other}</option>
                 </select>
               </div>
 
@@ -265,20 +265,20 @@ const EventRequestForm = ({ dictionary }: EventRequestFormProps) => {
                 <label style={{ fontSize: '0.85rem', fontWeight: '600', opacity: 0.9, display: 'flex', alignItems: 'center', gap: '0.5rem' }}>
                   <Star size={14} color="var(--primary)" /> {dictionary.labels.eventType}
                 </label>
-                <select 
+                <select
                   name="eventType"
                   required
                   value={formData.eventType}
                   onChange={handleChange}
                   style={{ ...inputStyle, appearance: 'none' }}
                 >
-                  <option value="" disabled style={{ backgroundColor: '#1c1b1b' }}>{dictionary.labels.eventType}</option>
-                  <option value="corporate" style={{ backgroundColor: '#1c1b1b' }}>{dictionary.options.corporate}</option>
-                  <option value="activation" style={{ backgroundColor: '#1c1b1b' }}>{dictionary.options.activation}</option>
-                  <option value="workshop" style={{ backgroundColor: '#1c1b1b' }}>{dictionary.options.workshop}</option>
-                  <option value="productLaunch" style={{ backgroundColor: '#1c1b1b' }}>{dictionary.options.productLaunch}</option>
-                  <option value="galaDinner" style={{ backgroundColor: '#1c1b1b' }}>{dictionary.options.galaDinner}</option>
-                  <option value="other" style={{ backgroundColor: '#1c1b1b' }}>{dictionary.options.other}</option>
+                  <option value="" disabled style={{ backgroundColor: 'rgb(28, 27, 27)' }}>{dictionary.labels.eventType}</option>
+                  <option value="corporate" style={{ backgroundColor: 'rgb(28, 27, 27)' }}>{dictionary.options.corporate}</option>
+                  <option value="activation" style={{ backgroundColor: 'rgb(28, 27, 27)' }}>{dictionary.options.activation}</option>
+                  <option value="workshop" style={{ backgroundColor: 'rgb(28, 27, 27)' }}>{dictionary.options.workshop}</option>
+                  <option value="productLaunch" style={{ backgroundColor: 'rgb(28, 27, 27)' }}>{dictionary.options.productLaunch}</option>
+                  <option value="galaDinner" style={{ backgroundColor: 'rgb(28, 27, 27)' }}>{dictionary.options.galaDinner}</option>
+                  <option value="other" style={{ backgroundColor: 'rgb(28, 27, 27)' }}>{dictionary.options.other}</option>
                 </select>
               </div>
 
@@ -286,8 +286,8 @@ const EventRequestForm = ({ dictionary }: EventRequestFormProps) => {
                 <label style={{ fontSize: '0.85rem', fontWeight: '600', opacity: 0.9, display: 'flex', alignItems: 'center', gap: '0.5rem' }}>
                   <Calendar size={14} color="var(--primary)" /> {dictionary.labels.date}
                 </label>
-                <input 
-                  type="date" 
+                <input
+                  type="date"
                   name="date"
                   required
                   value={formData.date}
@@ -300,8 +300,8 @@ const EventRequestForm = ({ dictionary }: EventRequestFormProps) => {
                 <label style={{ fontSize: '0.85rem', fontWeight: '600', opacity: 0.9, display: 'flex', alignItems: 'center', gap: '0.5rem' }}>
                   <Users size={14} color="var(--primary)" /> {dictionary.labels.guests}
                 </label>
-                <input 
-                  type="number" 
+                <input
+                  type="number"
                   name="guests"
                   placeholder={dictionary.placeholders.guests}
                   required
@@ -315,7 +315,7 @@ const EventRequestForm = ({ dictionary }: EventRequestFormProps) => {
                 <label style={{ fontSize: '0.85rem', fontWeight: '600', opacity: 0.9, display: 'flex', alignItems: 'center', gap: '0.5rem' }}>
                   <MessageSquare size={14} color="var(--primary)" /> {dictionary.labels.message}
                 </label>
-                <textarea 
+                <textarea
                   name="message"
                   placeholder={dictionary.placeholders.message}
                   rows={4}
@@ -327,9 +327,9 @@ const EventRequestForm = ({ dictionary }: EventRequestFormProps) => {
               </div>
 
               <div className="span-2" style={{ textAlign: 'center', marginTop: '1rem' }}>
-                <button 
-                  type="submit" 
-                  className="gradient-btn" 
+                <button
+                  type="submit"
+                  className="gradient-btn"
                   style={{ width: '100%', padding: '1.25rem', fontSize: '1rem', display: 'flex', alignItems: 'center', justifyContent: 'center', gap: '0.75rem' }}
                 >
                   <Send size={18} /> {status === 'sending' ? dictionary.status.sending : dictionary.button}
@@ -347,7 +347,7 @@ const EventRequestForm = ({ dictionary }: EventRequestFormProps) => {
 const inputStyle: React.CSSProperties = {
   padding: '1rem',
   backgroundColor: 'rgba(255, 255, 255, 0.05)',
-  border: '1px solid rgba(154, 143, 128, 0.2)',
+  border: '1px solid rgba(197, 173, 197, 0.2)',
   borderRadius: '0.5rem',
   color: 'var(--foreground)',
   fontSize: '0.875rem',
