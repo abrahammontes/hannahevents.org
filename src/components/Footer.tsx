@@ -21,7 +21,7 @@ interface FooterProps {
 
 const Footer = ({ dictionary }: FooterProps) => {
   return (
-    <footer id="contacto" style={{ backgroundColor: 'rgba(10, 10, 10, 0.8)', backdropFilter: 'blur(20px)', borderTop: '1px solid var(--outline-variant)', color: 'var(--foreground)', position: 'relative', zIndex: 10 }}>
+    <footer id="contacto" style={{ backgroundColor: 'rgba(3, 22, 55, 0.8)', backdropFilter: 'blur(20px)', borderTop: '1px solid var(--outline-variant)', color: 'var(--foreground)', position: 'relative', zIndex: 10 }}>
       <div className="section-spacing" style={{ maxWidth: '1200px', margin: '0 auto' }}>
         <div className="responsive-grid desktop-grid-footer" style={{ gap: '4rem' }}>
           

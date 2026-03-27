@@ -18,7 +18,7 @@ const GlobalVideoBackground = () => {
       }}
     >
       <iframe
-        src="https://www.youtube.com/embed/VTH1zCgC1kI?autoplay=1&mute=1&loop=1&playlist=VTH1zCgC1kI&controls=0&showinfo=0&rel=0&iv_load_policy=3&modestbranding=1"
+        src="https://www.youtube.com/embed/ftOTCFMpSWA?autoplay=1&mute=1&loop=1&playlist=ftOTCFMpSWA&controls=0&showinfo=0&rel=0&iv_load_policy=3&modestbranding=1"
         style={{
           position: 'absolute',
           top: '50%',
