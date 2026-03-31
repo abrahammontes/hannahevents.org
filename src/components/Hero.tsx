@@ -10,10 +10,21 @@ interface HeroProps {
     description: string;
     ctaPrimary: string;
     ctaSecondary: string;
+    ctaTicketing: string;
   };
 }
 
 const Hero = ({ dictionary }: HeroProps) => {
+  const scrollToDiscover = () => {
+    const element = document.getElementById('descubre-mas');
+    element?.scrollIntoView({ behavior: 'smooth' });
+  };
+
+  const scrollToTicketing = () => {
+    const element = document.getElementById('boletaje');
+    element?.scrollIntoView({ behavior: 'smooth' });
+  };
+
   return (
     <section className="hero" style={{ height: '100vh', width: '100%', position: 'relative', overflow: 'hidden', display: 'flex', alignItems: 'center', justifyContent: 'center', backgroundColor: 'transparent' }}>
       {/* Content */}
@@ -69,7 +80,9 @@ const Hero = ({ dictionary }: HeroProps) => {
            className="hero-btns"
         >
           <button className="gradient-btn" style={{ padding: '1rem 2.5rem', fontSize: '1rem' }}>{dictionary.ctaPrimary}</button>
-          <button style={{ 
+          <button 
+            onClick={scrollToDiscover}
+            style={{ 
             background: 'transparent', 
             border: '1px solid var(--outline)', 
             color: 'white', 
@@ -81,6 +94,21 @@ const Hero = ({ dictionary }: HeroProps) => {
             fontWeight: '600',
             cursor: 'pointer'
           }}>{dictionary.ctaSecondary}</button>
+          <button 
+            onClick={scrollToTicketing}
+            style={{ 
+            background: 'rgba(255, 255, 255, 0.1)', 
+            border: '1px solid var(--outline)', 
+            color: 'white', 
+            padding: '1rem 2.5rem', 
+            borderRadius: '0.25rem',
+            textTransform: 'uppercase',
+            letterSpacing: '0.1em',
+            fontSize: '0.875rem',
+            fontWeight: '600',
+            cursor: 'pointer',
+            backdropFilter: 'blur(10px)'
+          }}>{dictionary.ctaTicketing}</button>
         </motion.div>
       </div>
       <div style={{

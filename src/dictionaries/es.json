@@ -11,7 +11,8 @@
     "titleAccent": "experiencias estratégicas y memorables",
     "description": "Diseñamos y producimos eventos corporativos y sociales a nivel nacional e internacional, integrando creatividad, planeación y ejecución impecable en cada detalle. Creamos experiencias que fortalecen tu marca, conectan con tu audiencia y generan un impacto auténtico que trasciende.",
     "ctaPrimary": "Contáctanos",
-    "ctaSecondary": "Descubre más"
+    "ctaSecondary": "Descubre más",
+    "ctaTicketing": "Boletaje de Eventos Masivos"
   },
   "stats": {
     "projects": "Servicios ejecutados",
@@ -125,6 +126,15 @@
         "content": "Usted puede ejercer sus derechos de acceso, rectificación, cancelación u oposición enviando un correo a contacto@hannahevents.org."
       }
     ]
+  },
+  "discoverMore": {
+    "title": "Experiencias que trascienden",
+    "description": "Explora nuestra visión a través de momentos capturados en eventos de alto impacto. Cada detalle está diseñado para conectar y generar resultados auténticos."
+  },
+  "ticketing": {
+    "title": "Boletaje de Eventos Masivos",
+    "description": "Nuestra plataforma de boletaje está diseñada para manejar eventos de gran escala con total seguridad y eficiencia. Desde la preventa hasta el ingreso al evento, garantizamos una experiencia fluida para los organizadores y asistentes.",
+    "cta": "Más información"
   },
   "legalNotice": {
     "title": "Aviso legal",

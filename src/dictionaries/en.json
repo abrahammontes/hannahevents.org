@@ -11,7 +11,8 @@
     "titleAccent": "strategic and memorable experiences",
     "description": "We design and produce corporate and social events nationwide and internationally, integrating creativity, planning, and impeccable execution in every detail. We create experiences that strengthen your brand, connect with your audience, and generate an authentic impact that transcends.",
     "ctaPrimary": "Contact us",
-    "ctaSecondary": "Discover more"
+    "ctaSecondary": "Discover more",
+    "ctaTicketing": "Massive Event Ticketing"
   },
   "stats": {
     "projects": "Executed services",
@@ -125,6 +126,15 @@
         "content": "You may exercise your rights of access, rectification, cancellation, or opposition by sending an email to contacto@hannahevents.org."
       }
     ]
+  },
+  "discoverMore": {
+    "title": "Experiences that transcend",
+    "description": "Explore our vision through moments captured in high-impact events. Every detail is designed to connect and generate authentic results."
+  },
+  "ticketing": {
+    "title": "Massive Event Ticketing",
+    "description": "Our ticketing platform is designed to handle large-scale events with complete security and efficiency. From presale to event entry, we guarantee a smooth experience for organizers and attendees.",
+    "cta": "More information"
   },
   "legalNotice": {
     "title": "Legal notice",
