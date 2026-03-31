@@ -18,7 +18,7 @@ const GlobalVideoBackground = () => {
       }}
     >
       <iframe
-        src="https://www.youtube.com/embed/hmkHPI32D5Y?autoplay=1&mute=1&loop=1&playlist=hmkHPI32D5Y&controls=0&showinfo=0&rel=0&iv_load_policy=3&modestbranding=1"
+        src="https://www.youtube.com/embed/X-xlJv-RueE?autoplay=1&mute=1&loop=1&playlist=X-xlJv-RueE&controls=0&showinfo=0&rel=0&iv_load_policy=3&modestbranding=1"
         style={{
           position: 'absolute',
           top: '50%',
@@ -29,11 +29,11 @@ const GlobalVideoBackground = () => {
           minWidth: '177.77vh',
           transform: 'translate(-50%, -50%) scale(1.1)',
           pointerEvents: 'none',
-          filter: 'brightness(0.4) contrast(1.1)',
+          filter: 'brightness(0.5) contrast(1.1)', // Subtle brightness adjustment
           zIndex: 1
         }}
         frameBorder="0"
-        allow="autoplay; encrypted-media"
+        allow="autoplay; encrypted-media; picture-in-picture"
       ></iframe>
       {/* Semi-transparent overlay for readability */}
       <div style={{
