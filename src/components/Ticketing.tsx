@@ -22,7 +22,7 @@ const Ticketing = ({ dictionary }: TicketingProps) => {
   ];
 
   return (
-    <section id="boletaje" className="ticketing-section" style={{ position: 'relative', overflow: 'hidden', padding: '10rem 1.5rem', backgroundColor: '#020d21' }}>
+    <section id="boletaje" className="ticketing-section" style={{ position: 'relative', overflow: 'hidden', padding: '10rem 1.5rem', backgroundColor: 'transparent' }}>
       {/* Background Decor */}
       <div style={{
         position: 'absolute',

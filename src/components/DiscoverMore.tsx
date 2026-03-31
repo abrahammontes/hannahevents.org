@@ -22,7 +22,7 @@ const DiscoverMore = ({ dictionary }: DiscoverMoreProps) => {
       padding: '10rem 2rem', 
       position: 'relative', 
       overflow: 'hidden',
-      backgroundColor: '#050505',
+      backgroundColor: 'transparent',
       minHeight: '100vh',
       display: 'flex',
       flexDirection: 'column',
