@@ -9,6 +9,8 @@ interface TicketingProps {
     title: string;
     description: string;
     cta: string;
+    featureTitle: string;
+    featureDesc: string;
   };
 }
 
@@ -92,8 +94,8 @@ const Ticketing = ({ dictionary }: TicketingProps) => {
                <Ticket size={80} strokeWidth={1} color="var(--primary)" />
              </div>
           </div>
-          <h3 className="serif" style={{ fontSize: '2rem', marginBottom: '1rem', color: 'white' }}>Escalabilidad sin límites</h3>
-          <p style={{ opacity: 0.5, fontSize: '0.875rem' }}>Gestión masiva para eventos de más de 50,000 asistentes con total fluidez.</p>
+          <h3 className="serif" style={{ fontSize: '2rem', marginBottom: '1rem', color: 'white' }}>{dictionary.featureTitle}</h3>
+          <p style={{ opacity: 0.5, fontSize: '0.875rem' }}>{dictionary.featureDesc}</p>
         </motion.div>
 
       </div>

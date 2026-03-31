@@ -12,7 +12,7 @@
     "description": "We design and produce corporate and social events nationwide and internationally, integrating creativity, planning, and impeccable execution in every detail. We create experiences that strengthen your brand, connect with your audience, and generate an authentic impact that transcends.",
     "ctaPrimary": "Contact us",
     "ctaSecondary": "Discover more",
-    "ctaTicketing": "Massive Event Ticketing"
+    "ctaTicketing": "Event Ticketing"
   },
   "stats": {
     "projects": "Executed services",
@@ -132,9 +132,11 @@
     "description": "Explore our vision through moments captured in high-impact events. Every detail is designed to connect and generate authentic results."
   },
   "ticketing": {
-    "title": "Massive Event Ticketing",
-    "description": "Our ticketing platform is designed to handle large-scale events with complete security and efficiency. From presale to event entry, we guarantee a smooth experience for organizers and attendees.",
-    "cta": "More information"
+    "title": "Event Ticketing",
+    "description": "Our ticketing platform is designed to provide security and efficiency in every transaction. From presale to event entry, we guarantee a smooth experience for organizers and attendees.",
+    "cta": "More information",
+    "featureTitle": "Smart management",
+    "featureDesc": "Access control and ticket sales with cutting-edge technology for events of all types."
   },
   "legalNotice": {
     "title": "Legal notice",

@@ -12,7 +12,7 @@
     "description": "Diseñamos y producimos eventos corporativos y sociales a nivel nacional e internacional, integrando creatividad, planeación y ejecución impecable en cada detalle. Creamos experiencias que fortalecen tu marca, conectan con tu audiencia y generan un impacto auténtico que trasciende.",
     "ctaPrimary": "Contáctanos",
     "ctaSecondary": "Descubre más",
-    "ctaTicketing": "Boletaje de Eventos Masivos"
+    "ctaTicketing": "Boletaje de Eventos"
   },
   "stats": {
     "projects": "Servicios ejecutados",
@@ -132,9 +132,11 @@
     "description": "Explora nuestra visión a través de momentos capturados en eventos de alto impacto. Cada detalle está diseñado para conectar y generar resultados auténticos."
   },
   "ticketing": {
-    "title": "Boletaje de Eventos Masivos",
-    "description": "Nuestra plataforma de boletaje está diseñada para manejar eventos de gran escala con total seguridad y eficiencia. Desde la preventa hasta el ingreso al evento, garantizamos una experiencia fluida para los organizadores y asistentes.",
-    "cta": "Más información"
+    "title": "Boletaje de Eventos",
+    "description": "Nuestra plataforma de boletaje está diseñada para ofrecer seguridad y eficiencia en cada transacción. Desde la preventa hasta el ingreso al evento, garantizamos una experiencia fluida para los organizadores y asistentes.",
+    "cta": "Más información",
+    "featureTitle": "Gestión inteligente",
+    "featureDesc": "Control de acceso y venta de boletos con tecnología de punta para eventos de todo tipo."
   },
   "legalNotice": {
     "title": "Aviso legal",
