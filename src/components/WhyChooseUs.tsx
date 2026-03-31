@@ -26,7 +26,7 @@ const WhyChooseUs = ({ dictionary }: WhyChooseUsProps) => {
     icon: icons[i] || <Globe size={28} />
   }));
 
-  const containerVariants = {
+  const containerVariants: any = {
     hidden: { opacity: 0 },
     visible: {
       opacity: 1,
@@ -36,12 +36,12 @@ const WhyChooseUs = ({ dictionary }: WhyChooseUsProps) => {
     }
   };
 
-  const itemVariants = {
+  const itemVariants: any = {
     hidden: { opacity: 0, y: 20 },
     visible: { 
       opacity: 1, 
       y: 0, 
-      transition: { duration: 0.6, ease: "easeOut" } 
+      transition: { duration: 0.6 } 
     }
   };
 
