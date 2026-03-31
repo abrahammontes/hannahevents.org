@@ -19,10 +19,10 @@
     "annual": "Eventos anuales"
   },
   "whyChooseUs": {
-    "tag": "¿Por qué elegir HannaH Events?",
-    "title": "Experiencias corporativas diseñadas para generar",
-    "titleAccent": "impacto y resultados",
-    "description": "En HannaH Events, combinamos creatividad, planeación y ejecución minuciosa para ofrecer eventos que generan vínculos duraderos, impulsando la fidelización y el posicionamiento de marca.",
+    "tag": "¿Por qué elegir Hannah Events?",
+    "title": "Diseñamos experiencias corporativas y sociales que conectan, impactan y crean",
+    "titleAccent": "momentos inolvidables",
+    "description": "En Hannah Events transformamos ideas en experiencias estratégicas que conectan, inspiran y generan resultados. Nos especializamos en el diseño y la producción de eventos corporativos y sociales a nivel nacional e internacional, cuidando cada detalle para fortalecer el posicionamiento de tu marca y crear experiencias memorables con los más altos estándares de excelencia.",
     "cta": "Contáctanos",
     "highlights": [
       { "title": "Eventos a nivel nacional e internacional", "desc": "Diseñamos, gestionamos y producimos eventos corporativos en cualquier parte del país y del mundo, adaptándonos a las necesidades de cada cliente. Nuestro enfoque estratégico garantiza una ejecución impecable que maximiza la visibilidad, el posicionamiento y el impacto de tu marca en cada destino." },
@@ -57,12 +57,13 @@
       "country": "País"
     },
     "options": {
-      "corporate": "Evento corporativo",
-      "activation": "Lanzamiento de marca",
-      "workshop": "Taller o encuentro",
-      "productLaunch": "Lanzamiento de producto",
-      "galaDinner": "Cena de gala",
-      "other": "Otro"
+      "corporate": "Eventos corporativos",
+      "social": "Eventos sociales",
+      "brandExperience": "Experiencias de marca (activaciones)",
+      "conferences": "Conferencias y talleres",
+      "internal": "Eventos empresariales internos",
+      "hybrid": "Eventos híbridos y digitales",
+      "fairs": "Ferias, expos y stands"
     },
     "countries": {
       "mx": "México",
@@ -75,7 +76,7 @@
       "other": "Otro"
     },
     "placeholders": {
-      "name": "Ej. HannaH Events",
+      "name": "Ej. Hannah Events",
       "email": "ejemplo@dominio.com",
       "phone": "Tel: +52...",
       "guests": "Ej. 100",
@@ -109,7 +110,7 @@
     "sections": [
       {
         "title": "1. Responsable del tratamiento",
-        "content": "HannaH Events, con domicilio en Guadalajara, Jalisco, México, es responsable del tratamiento de sus datos personales recolectados a través de hannahevents.org."
+        "content": "Hannah Events, con domicilio en Guadalajara, Jalisco, México, es responsable del tratamiento de sus datos personales recolectados a través de hannahevents.org."
       },
       {
         "title": "2. Datos recolectados",
@@ -131,15 +132,15 @@
     "sections": [
       {
         "title": "1. Información general",
-        "content": "En cumplimiento con los estándares de transparencia, se informa que este sitio web es operado por HannaH Events, líderes en la organización de eventos corporativos."
+        "content": "En cumplimiento con los estándares de transparencia, se informa que este sitio web es operado por Hannah Events, líderes en la organización de eventos corporativos."
       },
       {
         "title": "2. Propiedad intelectual",
-        "content": "Todos los contenidos, logotipos y diseños en este sitio son propiedad de HannaH Events. Queda prohibida su reproducción total o parcial sin autorización previa."
+        "content": "Todos los contenidos, logotipos y diseños en este sitio son propiedad de Hannah Events. Queda prohibida su reproducción total o parcial sin autorización previa."
       },
       {
         "title": "3. Limitación de responsabilidad",
-        "content": "HannaH Events no se hace responsable de las interrupciones en el servicio web o de daños derivados del mal uso del sitio por parte de terceros."
+        "content": "Hannah Events no se hace responsable de las interrupciones en el servicio web o de daños derivados del mal uso del sitio por parte de terceros."
       }
     ]
   }

@@ -19,10 +19,10 @@
     "annual": "Annual events"
   },
   "whyChooseUs": {
-    "tag": "Why choose HannaH Events?",
-    "title": "Corporate experiences designed to generate",
-    "titleAccent": "impact and results",
-    "description": "At HannaH Events, we combine creativity, planning, and meticulous execution to offer events that generate lasting bonds, boosting loyalty and brand positioning.",
+    "tag": "Why choose Hannah Events?",
+    "title": "We design corporate and social experiences that connect, impact and create",
+    "titleAccent": "unforgettable moments",
+    "description": "At Hannah Events, we transform ideas into strategic experiences that connect, inspire, and generate results. We specialize in the design and production of corporate and social events nationwide and internationally, taking care of every detail to strengthen your brand's positioning and create memorable experiences with the highest standards of excellence.",
     "cta": "Contact us",
     "highlights": [
       { "title": "National and international events", "desc": "We design, manage, and produce corporate events anywhere in the country and the world, adapting to each client's needs. Our strategic approach ensures flawless execution that maximizes your brand's visibility, positioning, and impact in every destination." },
@@ -57,12 +57,13 @@
       "country": "Country"
     },
     "options": {
-      "corporate": "Corporate event",
-      "activation": "Brand launch",
-      "workshop": "Workshop or meetup",
-      "productLaunch": "Product launch",
-      "galaDinner": "Gala dinner",
-      "other": "Other"
+      "corporate": "Corporate events",
+      "social": "Social events",
+      "brandExperience": "Brand experiences (activations)",
+      "conferences": "Conferences and workshops",
+      "internal": "Internal corporate events",
+      "hybrid": "Hybrid and digital events",
+      "fairs": "Fairs, expos, and stands"
     },
     "countries": {
       "mx": "Mexico",
@@ -75,7 +76,7 @@
       "other": "Other"
     },
     "placeholders": {
-      "name": "E.g. HannaH Events",
+      "name": "E.g. Hannah Events",
       "email": "example@domain.com",
       "phone": "Tel: +52...",
       "guests": "E.g. 100",
@@ -109,7 +110,7 @@
     "sections": [
       {
         "title": "1. Data controller",
-        "content": "HannaH Events, located in Guadalajara, Jalisco, Mexico, is responsible for processing your personal data collected through hannahevents.org."
+        "content": "Hannah Events, located in Guadalajara, Jalisco, Mexico, is responsible for processing your personal data collected through hannahevents.org."
       },
       {
         "title": "2. Data collected",
@@ -131,15 +132,15 @@
     "sections": [
       {
         "title": "1. General information",
-        "content": "In compliance with transparency standards, please be advised that this website is operated by HannaH Events, leaders in corporate event organization."
+        "content": "In compliance with transparency standards, please be advised that this website is operated by Hannah Events, leaders in corporate event organization."
       },
       {
         "title": "2. Intellectual property",
-        "content": "All content, logos, and designs on this site are the property of HannaH Events. Total or partial reproduction without prior authorization is prohibited."
+        "content": "All content, logos, and designs on this site are the property of Hannah Events. Total or partial reproduction without prior authorization is prohibited."
       },
       {
         "title": "3. Limitation of liability",
-        "content": "HannaH Events is not responsible for interruptions in web service or damages resulting from third-party misuse of the site."
+        "content": "Hannah Events is not responsible for interruptions in web service or damages resulting from third-party misuse of the site."
       }
     ]
   }

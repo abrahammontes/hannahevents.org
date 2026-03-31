@@ -20,14 +20,7 @@ interface EventRequestFormProps {
       message: string;
       country: string;
     };
-    options: {
-      corporate: string;
-      activation: string;
-      workshop: string;
-      productLaunch: string;
-      galaDinner: string;
-      other: string;
-    };
+    options: Record<string, string>;
     countries: {
       mx: string;
       us: string;
@@ -273,12 +266,11 @@ const EventRequestForm = ({ dictionary }: EventRequestFormProps) => {
                   style={{ ...inputStyle, appearance: 'none' }}
                 >
                   <option value="" disabled style={{ backgroundColor: 'rgb(28, 27, 27)' }}>{dictionary.labels.eventType}</option>
-                  <option value="corporate" style={{ backgroundColor: 'rgb(28, 27, 27)' }}>{dictionary.options.corporate}</option>
-                  <option value="activation" style={{ backgroundColor: 'rgb(28, 27, 27)' }}>{dictionary.options.activation}</option>
-                  <option value="workshop" style={{ backgroundColor: 'rgb(28, 27, 27)' }}>{dictionary.options.workshop}</option>
-                  <option value="productLaunch" style={{ backgroundColor: 'rgb(28, 27, 27)' }}>{dictionary.options.productLaunch}</option>
-                  <option value="galaDinner" style={{ backgroundColor: 'rgb(28, 27, 27)' }}>{dictionary.options.galaDinner}</option>
-                  <option value="other" style={{ backgroundColor: 'rgb(28, 27, 27)' }}>{dictionary.options.other}</option>
+                  {Object.entries(dictionary.options).map(([key, label]) => (
+                    <option key={key} value={key} style={{ backgroundColor: 'rgb(28, 27, 27)' }}>
+                      {label}
+                    </option>
+                  ))}
                 </select>
               </div>
 
