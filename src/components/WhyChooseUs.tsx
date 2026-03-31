@@ -46,7 +46,14 @@ const WhyChooseUs = ({ dictionary }: WhyChooseUsProps) => {
   };
 
   return (
-    <section id="quienes-somos" style={{ position: 'relative', overflow: 'hidden', padding: '10rem 1.5rem', backgroundColor: 'transparent' }}>
+    <section id="quienes-somos" style={{ 
+      position: 'relative', 
+      overflow: 'hidden', 
+      padding: '10rem 1.5rem', 
+      backgroundColor: 'rgba(0, 0, 0, 0.4)', 
+      backdropFilter: 'blur(15px)',
+      WebkitBackdropFilter: 'blur(15px)'
+    }}>
       {/* Background Decor */}
       <div style={{
         position: 'absolute',
