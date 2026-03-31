@@ -82,33 +82,20 @@ const Hero = ({ dictionary }: HeroProps) => {
           <button className="gradient-btn" style={{ padding: '1rem 2.5rem', fontSize: '1rem' }}>{dictionary.ctaPrimary}</button>
           <button 
             onClick={scrollToDiscover}
+            className="gradient-btn"
             style={{ 
-            background: 'transparent', 
-            border: '1px solid var(--outline)', 
-            color: 'white', 
-            padding: '1rem 2.5rem', 
-            borderRadius: '0.25rem',
-            textTransform: 'uppercase',
-            letterSpacing: '0.1em',
-            fontSize: '0.875rem',
-            fontWeight: '600',
-            cursor: 'pointer'
-          }}>{dictionary.ctaSecondary}</button>
+              padding: '1rem 2.5rem', 
+              fontSize: '1rem'
+            }}
+          >{dictionary.ctaSecondary}</button>
           <button 
             onClick={scrollToTicketing}
+            className="gradient-btn"
             style={{ 
-            background: 'rgba(255, 255, 255, 0.05)', 
-            border: '1px solid var(--outline)', 
-            color: 'white', 
-            padding: '1rem 2.5rem', 
-            borderRadius: '0.25rem',
-            textTransform: 'uppercase',
-            letterSpacing: '0.1em',
-            fontSize: '0.875rem',
-            fontWeight: '600',
-            cursor: 'pointer',
-            backdropFilter: 'blur(10px)'
-          }}>{dictionary.ctaTicketing}</button>
+              padding: '1rem 2.5rem', 
+              fontSize: '1rem'
+            }}
+          >{dictionary.ctaTicketing}</button>
         </motion.div>
       </div>
       <div style={{

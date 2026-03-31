@@ -50,8 +50,8 @@ const WhyChooseUs = ({ dictionary }: WhyChooseUsProps) => {
       position: 'relative', 
       overflow: 'hidden', 
       padding: '10rem 1.5rem', 
-      backgroundColor: 'rgba(0, 0, 0, 0.4)', 
-      backdropFilter: 'blur(15px)',
+      backgroundColor: 'rgba(0, 0, 0, 0.1)', 
+      backdropFilter: 'blur(30px)',
       WebkitBackdropFilter: 'blur(15px)'
     }}>
       {/* Background Decor */}

@@ -5,10 +5,10 @@
   --foreground: #FFFFFF; /* White */
   --primary: #E1E1E1; /* Light Gray/Silver for text and icons */
   --primary-container: #ACACAC; /* Medium Gray */
-  --btn-primary: #031637; /* Navy Blue for buttons */
-  --btn-secondary: #05204b; /* Navy Var for button gradient */
-  --hover-primary: #e1c3bf; /* Light Pink for hover */
-  --hover-secondary: #E1E1E1; /* Silver for hover gradient */
+  --btn-primary: #1e40af; /* Blue for buttons */
+  --btn-secondary: #3b82f6; /* Blue Var for gradient */
+  --hover-primary: #ffd1dc; /* Pastel Pink for hover */
+  --hover-secondary: #ffc0cb; /* Pink Var for gradient */
   --surface: #031637; /* Dark Navy Blue */
   --surface-container-low: #05204b; /* Dark Navy var */
   --surface-container-high: #082b63; /* Dark Navy var */
@@ -56,29 +56,29 @@ a:hover {
 }
 
 .glass {
-  background: rgba(3, 22, 55, 0.7);
-  backdrop-filter: blur(20px);
-  -webkit-backdrop-filter: blur(20px);
+  background: rgba(3, 22, 55, 0.3);
+  backdrop-filter: blur(30px);
+  -webkit-backdrop-filter: blur(30px);
 }
 
 .gradient-btn {
   background: linear-gradient(135deg, var(--btn-primary) 0%, var(--btn-secondary) 100%);
-  color: #E1E1E1; /* Silver text */
+  color: #FFFFFF; /* White text */
   font-weight: 600;
   border-radius: 0.25rem;
   padding: 0.75rem 1.5rem;
   text-transform: uppercase;
   letter-spacing: 0.1em;
   font-size: 0.875rem;
-  border: 1px solid #ACACAC; /* Silver/Medium Gray edge */
+  border: 1px solid var(--btn-primary); 
   cursor: pointer;
   transition: all 0.3s ease;
 }
 
 .gradient-btn:hover {
   background: linear-gradient(135deg, var(--hover-primary) 0%, var(--hover-secondary) 100%);
-  color: #031637; /* Dark Navy text on hover */
-  border-color: #031637;
+  color: var(--btn-primary); /* Blue text on hover */
+  border-color: var(--hover-primary);
 }
 
 /* MOBILE FIRST BASE STREUCTURE */

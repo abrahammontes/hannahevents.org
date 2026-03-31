@@ -19,7 +19,7 @@ const Stats = ({ dictionary }: StatsProps) => {
   ];
 
   return (
-    <section className="stats" style={{ backgroundColor: 'rgba(28, 27, 27, 0.4)', backdropFilter: 'blur(5px)', borderTop: '1px solid var(--outline-variant)', borderBottom: '1px solid var(--outline-variant)' }}>
+    <section className="stats" style={{ backgroundColor: 'rgba(28, 27, 27, 0.15)', backdropFilter: 'blur(30px)', borderTop: '1px solid var(--outline-variant)', borderBottom: '1px solid var(--outline-variant)' }}>
       <div className="section-spacing responsive-grid" style={{ maxWidth: '1200px', margin: '0 auto', textAlign: 'center' }}>
         {statsList.map((stat, index) => (
           <motion.div 

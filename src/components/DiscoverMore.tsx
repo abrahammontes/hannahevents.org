@@ -22,7 +22,7 @@ const DiscoverMore = ({ dictionary }: DiscoverMoreProps) => {
       padding: '10rem 2rem', 
       position: 'relative', 
       overflow: 'hidden',
-      backgroundColor: 'rgba(0, 0, 0, 0.4)', // Subtle tint for the 'fuzzy' effect
+      backgroundColor: 'rgba(0, 0, 0, 0.05)', // Subtle tint for the 'fuzzy' effect
       backdropFilter: 'blur(15px)',
       WebkitBackdropFilter: 'blur(15px)',
       minHeight: '100vh',
