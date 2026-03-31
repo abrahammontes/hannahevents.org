@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&family=Noto+Serif:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&display=swap');
 
 :root {
   --background: #031637; /* Dark Navy Blue */
@@ -16,8 +16,8 @@
   --outline: #E1E1E1; /* Light Gray/Silver */
   --outline-variant: rgba(225, 225, 225, 0.2); 
   
-  --font-serif: 'Noto Serif', serif;
-  --font-sans: 'Manrope', sans-serif;
+  --font-serif: 'Jost', sans-serif; /* Unified with Futura-style font */
+  --font-sans: 'Jost', sans-serif;
 }
 
 * {
