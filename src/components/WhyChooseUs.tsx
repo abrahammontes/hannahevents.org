@@ -128,8 +128,8 @@ const WhyChooseUs = ({ dictionary }: WhyChooseUsProps) => {
           viewport={{ once: true, margin: "-100px" }}
           style={{ 
             display: 'grid', 
-            gap: '2.5rem', 
-            marginBottom: '8rem' 
+            gap: '1.5rem', 
+            marginBottom: '6rem' 
           }}
         >
           {highlights.map((h, i) => (
@@ -139,9 +139,9 @@ const WhyChooseUs = ({ dictionary }: WhyChooseUsProps) => {
               whileHover={{ y: -10, transition: { duration: 0.3 } }}
               className="optimized-highlight-card"
               style={{
-                padding: '3.5rem 3rem',
+                padding: '2rem 1.75rem',
                 backgroundColor: 'rgba(255, 255, 255, 0.01)',
-                borderRadius: '1.5rem',
+                borderRadius: '1.25rem',
                 border: '1px solid rgba(255, 255, 255, 0.03)',
                 backdropFilter: 'blur(10px)',
                 display: 'flex',
@@ -152,17 +152,19 @@ const WhyChooseUs = ({ dictionary }: WhyChooseUsProps) => {
             >
               <div style={{ 
                 color: 'var(--primary)', 
-                marginBottom: '2rem', 
+                marginBottom: '1.25rem', 
                 background: 'rgba(255, 255, 255, 0.05)',
                 width: 'fit-content',
-                padding: '1rem',
-                borderRadius: '1rem',
+                padding: '0.75rem',
+                borderRadius: '0.75rem',
                 display: 'flex',
                 alignItems: 'center',
-                justifyContent: 'center'
+                justifyContent: 'center',
+                transform: 'scale(0.85)',
+                transformOrigin: 'left center'
               }}>{h.icon}</div>
-              <h4 className="serif" style={{ fontSize: '1.5rem', marginBottom: '1.25rem', color: 'white', fontWeight: '600' }}>{h.title}</h4>
-              <p style={{ fontSize: '1rem', opacity: 0.6, lineHeight: '1.8', color: '#a1a1aa' }}>{h.desc}</p>
+              <h4 className="serif" style={{ fontSize: '1.25rem', marginBottom: '0.75rem', color: 'white', fontWeight: '600' }}>{h.title}</h4>
+              <p style={{ fontSize: '0.9rem', opacity: 0.6, lineHeight: '1.6', color: '#a1a1aa' }}>{h.desc}</p>
             </motion.div>
           ))}
         </motion.div>
