@@ -13,9 +13,9 @@ interface StatsProps {
 
 const Stats = ({ dictionary }: StatsProps) => {
   const statsList = [
-    { label: dictionary.projects, value: '150+' },
-    { label: dictionary.clients, value: '50+' },
-    { label: dictionary.annual, value: '25+' },
+    { label: dictionary.projects, value: '200+' },
+    { label: dictionary.clients, value: '60+' },
+    { label: dictionary.annual, value: '50+' },
   ];
 
   return (
