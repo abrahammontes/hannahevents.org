@@ -1,67 +1,67 @@
 {
   "navbar": {
     "home": "Home",
-    "about": "About Us",
+    "about": "About us",
     "services": "Services",
     "contact": "Contact",
-    "cta": "Start Today"
+    "cta": "Start today"
   },
   "hero": {
-    "title": "Transforming Ideas into",
-    "titleAccent": "Unique Experiences",
+    "title": "Transforming ideas into",
+    "titleAccent": "unique experiences",
     "description": "We design and produce strategic corporate events that strengthen organizational culture and position your brand with unparalleled impact.",
-    "ctaPrimary": "Contact Us",
-    "ctaSecondary": "Discover More"
+    "ctaPrimary": "Contact us",
+    "ctaSecondary": "Discover more"
   },
   "stats": {
-    "projects": "Executed Services",
-    "clients": "Satisfied Clients",
-    "annual": "Annual Events"
+    "projects": "Executed services",
+    "clients": "Satisfied clients",
+    "annual": "Annual events"
   },
   "whyChooseUs": {
-    "tag": "Why Choose HANNAH EVENTS?",
+    "tag": "Why choose HannaH Events?",
     "title": "Corporate experiences designed to generate",
-    "titleAccent": "Impact and Results",
-    "description": "At HANNAH EVENTS, we combine creativity, planning, and meticulous execution to offer events that generate lasting bonds, boosting loyalty and brand positioning.",
-    "cta": "Contact Us",
+    "titleAccent": "impact and results",
+    "description": "At HannaH Events, we combine creativity, planning, and meticulous execution to offer events that generate lasting bonds, boosting loyalty and brand positioning.",
+    "cta": "Contact us",
     "highlights": [
-      { "title": "National and International Events", "desc": "We manage and produce corporate events with local and global reach to maximize your brand's presence." },
-      { "title": "Personalized Strategies", "desc": "We create annual calendars of workshops, activations, and gatherings to strengthen your company's culture and loyalty." },
-      { "title": "Professional Executives", "desc": "Our expert team ensures impeccable execution in every detail, guaranteeing quality and professionalism." },
-      { "title": "Immersive Experiences", "desc": "We design spaces and dynamics that generate genuine connections and position your brand in a memorable way." }
+      { "title": "National and international events", "desc": "We design, manage, and produce corporate events anywhere in the country and the world, adapting to each client's needs. Our strategic approach ensures flawless execution that maximizes your brand's visibility, positioning, and impact in every destination." },
+      { "title": "Personalized strategies", "desc": "We develop custom annual plans, integrating workshops, activations, experiences, and corporate gatherings that strengthen organizational culture, drive engagement, and consolidate loyalty for both employees and clients." },
+      { "title": "Professional executives", "desc": "We have a highly trained and committed team that takes care of every detail of the process with precision and excellence. Our experience allows us to anticipate needs, resolve quickly, and guarantee superior quality standards in every event." },
+      { "title": "Immersive experiences", "desc": "We create memorable sensory and dynamic experiences that emotionally connect with attendees. Through design, storytelling, and technology, we ensure that every event becomes a unique experience that strengthens your brand's positioning and recall." }
     ]
   },
   "services": {
-    "tag": "Elite Services",
-    "title": "Excellence in Every",
-    "titleAccent": "Detail",
+    "tag": "Elite services",
+    "title": "Excellence in every",
+    "titleAccent": "detail",
     "list": [
-      { "title": "Corporate Events", "desc": "Comprehensive design and production of strategic events for brands and institutions." },
-      { "title": "Brand Launches", "desc": "Immersive experiences that emotionally connect consumers with your purpose." },
-      { "title": "Workshops & Gatherings", "desc": "Custom programs to strengthen organizational culture and leadership." }
+      { "title": "Corporate events", "desc": "Comprehensive design and production of strategic events for brands and institutions." },
+      { "title": "Brand launches", "desc": "Immersive experiences that emotionally connect consumers with your purpose." },
+      { "title": "Workshops & gatherings", "desc": "Custom programs to strengthen organizational culture and leadership." }
     ]
   },
   "requestForm": {
-    "tag": "Event Request",
-    "title": "Plan Your Next",
-    "titleAccent": "Great Moment",
+    "tag": "Event request",
+    "title": "Plan your next",
+    "titleAccent": "great moment",
     "description": "Tell us about your vision and our expert team will make it a reality.",
     "labels": {
       "name": "Name / Company",
-      "email": "Email Address",
-      "phone": "Phone Number",
-      "eventType": "Event Type",
-      "date": "Estimated Date",
+      "email": "Email address",
+      "phone": "Phone number",
+      "eventType": "Event type",
+      "date": "Estimated date",
       "guests": "Guests",
       "message": "Message",
       "country": "Country"
     },
     "options": {
-      "corporate": "Corporate Event",
-      "activation": "Brand Launch",
-      "workshop": "Workshop or Meetup",
-      "productLaunch": "Product Launch",
-      "galaDinner": "Gala Dinner",
+      "corporate": "Corporate event",
+      "activation": "Brand launch",
+      "workshop": "Workshop or meetup",
+      "productLaunch": "Product launch",
+      "galaDinner": "Gala dinner",
       "other": "Other"
     },
     "countries": {
@@ -81,12 +81,12 @@
       "guests": "E.g. 100",
       "message": "How can we help you stand out?"
     },
-    "button": "Send Request",
+    "button": "Send request",
     "status": {
       "sending": "Sending...",
-      "success": "Request Sent Successfully!",
+      "success": "Request sent successfully!",
       "successDesc": "We've sent a confirmation to your email. Our team will contact you soon.",
-      "error": "Error Sending",
+      "error": "Error sending",
       "errorDesc": "There was a problem. Please try again or contact us directly.",
       "retry": "Retry"
     }
@@ -100,19 +100,19 @@
     "whatsapp": "wa.me/+5213329700210",
     "email": "contacto@hannahevents.org",
     "location": "Guadalajara, Jalisco, Mexico",
-    "rights": "All Rights Reserved",
+    "rights": "All rights reserved",
     "madeBy": "Made by"
   },
   "privacyPolicy": {
-    "title": "Privacy Policy",
+    "title": "Privacy policy",
     "lastUpdated": "Last updated: March 2026",
     "sections": [
       {
-        "title": "1. Data Controller",
+        "title": "1. Data controller",
         "content": "HannaH Events, located in Guadalajara, Jalisco, Mexico, is responsible for processing your personal data collected through hannahevents.org."
       },
       {
-        "title": "2. Data Collected",
+        "title": "2. Data collected",
         "content": "We collect name, company, email, phone number, and country through our event request form for contact and quoting purposes."
       },
       {
@@ -120,25 +120,25 @@
         "content": "Your data will be used exclusively to manage your event request, send you the required information, and maintain professional communication."
       },
       {
-        "title": "4. Privacy Rights",
-        "content": "You may exercise your rights of Access, Rectification, Cancellation, or Opposition by sending an email to contacto@hannahevents.org."
+        "title": "4. Privacy rights",
+        "content": "You may exercise your rights of access, rectification, cancellation, or opposition by sending an email to contacto@hannahevents.org."
       }
     ]
   },
   "legalNotice": {
-    "title": "Legal Notice",
+    "title": "Legal notice",
     "lastUpdated": "Last updated: March 2026",
     "sections": [
       {
-        "title": "1. General Information",
+        "title": "1. General information",
         "content": "In compliance with transparency standards, please be advised that this website is operated by HannaH Events, leaders in corporate event organization."
       },
       {
-        "title": "2. Intellectual Property",
+        "title": "2. Intellectual property",
         "content": "All content, logos, and designs on this site are the property of HannaH Events. Total or partial reproduction without prior authorization is prohibited."
       },
       {
-        "title": "3. Limitation of Liability",
+        "title": "3. Limitation of liability",
         "content": "HannaH Events is not responsible for interruptions in web service or damages resulting from third-party misuse of the site."
       }
     ]

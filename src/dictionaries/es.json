@@ -4,64 +4,64 @@
     "about": "Quiénes somos",
     "services": "Servicios",
     "contact": "Contacto",
-    "cta": "Empieza Hoy"
+    "cta": "Empieza hoy"
   },
   "hero": {
-    "title": "Transformamos Ideas en",
-    "titleAccent": "Experiencias Únicas",
+    "title": "Transformamos ideas en",
+    "titleAccent": "experiencias únicas",
     "description": "Diseñamos y producimos eventos corporativos estratégicos que fortalecen la cultura organizacional y posicionan tu marca con impacto inigualable.",
     "ctaPrimary": "Contáctanos",
-    "ctaSecondary": "Descubre Más"
+    "ctaSecondary": "Descubre más"
   },
   "stats": {
-    "projects": "Servicios Ejecutados",
-    "clients": "Clientes Satisfechos",
-    "annual": "Eventos Anuales"
+    "projects": "Servicios ejecutados",
+    "clients": "Clientes satisfechos",
+    "annual": "Eventos anuales"
   },
   "whyChooseUs": {
-    "tag": "¿Por qué Elegir HANNAH EVENTS?",
+    "tag": "¿Por qué elegir HannaH Events?",
     "title": "Experiencias corporativas diseñadas para generar",
-    "titleAccent": "Impacto y Resultados",
-    "description": "En HANNAH EVENTS, combinamos creatividad, planeación y ejecución minuciosa para ofrecer eventos que generan vínculos duraderos, impulsando la fidelización y el posicionamiento de marca.",
+    "titleAccent": "impacto y resultados",
+    "description": "En HannaH Events, combinamos creatividad, planeación y ejecución minuciosa para ofrecer eventos que generan vínculos duraderos, impulsando la fidelización y el posicionamiento de marca.",
     "cta": "Contáctanos",
     "highlights": [
-      { "title": "Eventos a Nivel Nacional e Internacional", "desc": "Gestionamos y producimos eventos corporativos con alcance local y global para maximizar la presencia de tu marca." },
-      { "title": "Estrategias Personalizadas", "desc": "Creamos calendarios anuales de talleres, activaciones y encuentros para fortalecer la cultura y la fidelidad en tu empresa." },
-      { "title": "Ejecutivos Profesionales", "desc": "Nuestro equipo experto asegura una ejecución impecable en cada detalle, garantizando calidad y profesionalismo." },
-      { "title": "Experiencias Inmersivas", "desc": "Diseñamos espacios y dinámicas que generan conexiones genuinas y posicionan tu marca de manera memorable." }
+      { "title": "Eventos a nivel nacional e internacional", "desc": "Diseñamos, gestionamos y producimos eventos corporativos en cualquier parte del país y del mundo, adaptándonos a las necesidades de cada cliente. Nuestro enfoque estratégico garantiza una ejecución impecable que maximiza la visibilidad, el posicionamiento y el impacto de tu marca en cada destino." },
+      { "title": "Estrategias personalizadas", "desc": "Desarrollamos planes anuales a la medida, integrando talleres, activaciones, experiencias y encuentros corporativos que fortalecen la cultura organizacional, impulsan el engagement y consolidan la lealtad tanto de colaboradores como de clientes." },
+      { "title": "Ejecutivos profesionales", "desc": "Contamos con un equipo altamente capacitado y comprometido, que cuida cada detalle del proceso con precisión y excelencia. Nuestra experiencia nos permite anticipar necesidades, resolver de forma ágil y garantizar estándares de calidad superiores en cada evento." },
+      { "title": "Experiencias inmersivas", "desc": "Creamos experiencias sensoriales y dinámicas memorables que conectan emocionalmente con los asistentes. A través de diseño, narrativa y tecnología, logramos que cada evento se convierta en una vivencia única que fortalece el posicionamiento y la recordación de tu marca." }
     ]
   },
   "services": {
-    "tag": "Servicios de Élite",
+    "tag": "Servicios de élite",
     "title": "Excelencia en cada",
-    "titleAccent": "Detalle",
+    "titleAccent": "detalle",
     "list": [
-      { "title": "Eventos Corporativos", "desc": "Diseño integral y producción de eventos estratégicos para marcas e instituciones." },
-      { "title": "Lanzamiento de Marca", "desc": "Experiencias inmersivas que conectan emocionalmente a los consumidores con tu propósito." },
-      { "title": "Talleres y Encuentros", "desc": "Programas personalizados para fortalecer la cultura organizacional y el liderazgo." }
+      { "title": "Eventos corporativos", "desc": "Diseño integral y producción de eventos estratégicos para marcas e instituciones." },
+      { "title": "Lanzamiento de marca", "desc": "Experiencias inmersivas que conectan emocionalmente a los consumidores con tu propósito." },
+      { "title": "Talleres y encuentros", "desc": "Programas personalizados para fortalecer la cultura organizacional y el liderazgo." }
     ]
   },
   "requestForm": {
-    "tag": "Solicitud de Evento",
-    "title": "Planea tu Próximo",
-    "titleAccent": "Gran Momento",
+    "tag": "Solicitud de evento",
+    "title": "Planea tu próximo",
+    "titleAccent": "gran momento",
     "description": "Cuéntanos sobre tu visión y nuestro equipo de expertos se encargará de hacerla realidad.",
     "labels": {
       "name": "Nombre / Empresa",
-      "email": "Correo Electrónico",
+      "email": "Correo electrónico",
       "phone": "Teléfono",
-      "eventType": "Tipo de Evento",
-      "date": "Fecha Estimada",
-      "guests": "Número de Invitados",
-      "message": "Detalles Adicionales",
+      "eventType": "Tipo de evento",
+      "date": "Fecha estimada",
+      "guests": "Número de invitados",
+      "message": "Detalles adicionales",
       "country": "País"
     },
     "options": {
-      "corporate": "Evento Corporativo",
-      "activation": "Lanzamiento de Marca",
-      "workshop": "Taller o Encuentro",
-      "productLaunch": "Lanzamiento de Producto",
-      "galaDinner": "Cena de Gala",
+      "corporate": "Evento corporativo",
+      "activation": "Lanzamiento de marca",
+      "workshop": "Taller o encuentro",
+      "productLaunch": "Lanzamiento de producto",
+      "galaDinner": "Cena de gala",
       "other": "Otro"
     },
     "countries": {
@@ -81,12 +81,12 @@
       "guests": "Ej. 100",
       "message": "¿Cómo podemos ayudarte a destacar?"
     },
-    "button": "Enviar Solicitud",
+    "button": "Enviar solicitud",
     "status": {
       "sending": "Enviando...",
-      "success": "¡Solicitud Enviada con Éxito!",
+      "success": "¡Solicitud enviada con éxito!",
       "successDesc": "Hemos enviado una confirmación a tu correo. Nuestro equipo te contactará pronto.",
-      "error": "Error al Enviar",
+      "error": "Error al enviar",
       "errorDesc": "Hubo un problema. Por favor intenta de nuevo o contáctanos directamente.",
       "retry": "Reintentar"
     }
@@ -100,19 +100,19 @@
     "whatsapp": "wa.me/+5213329700210",
     "email": "contacto@hannahevents.org",
     "location": "Guadalajara, Jalisco, México",
-    "rights": "Derechos Reservados",
+    "rights": "Derechos reservados",
     "madeBy": "Hecho por"
   },
   "privacyPolicy": {
-    "title": "Política de Privacidad",
-    "lastUpdated": "Última actualización: Marzo 2026",
+    "title": "Política de privacidad",
+    "lastUpdated": "Última actualización: marzo 2026",
     "sections": [
       {
-        "title": "1. Responsable del Tratamiento",
+        "title": "1. Responsable del tratamiento",
         "content": "HannaH Events, con domicilio en Guadalajara, Jalisco, México, es responsable del tratamiento de sus datos personales recolectados a través de hannahevents.org."
       },
       {
-        "title": "2. Datos Recolectados",
+        "title": "2. Datos recolectados",
         "content": "Recopilamos nombre, empresa, correo electrónico, teléfono y país a través de nuestro formulario de solicitud de eventos para fines de contacto y presupuestación."
       },
       {
@@ -121,24 +121,24 @@
       },
       {
         "title": "4. Derechos ARCO",
-        "content": "Usted puede ejercer sus derechos de Acceso, Rectificación, Cancelación u Oposición enviando un correo a contacto@hannahevents.org."
+        "content": "Usted puede ejercer sus derechos de acceso, rectificación, cancelación u oposición enviando un correo a contacto@hannahevents.org."
       }
     ]
   },
   "legalNotice": {
-    "title": "Aviso Legal",
-    "lastUpdated": "Última actualización: Marzo 2026",
+    "title": "Aviso legal",
+    "lastUpdated": "Última actualización: marzo 2026",
     "sections": [
       {
-        "title": "1. Información General",
+        "title": "1. Información general",
         "content": "En cumplimiento con los estándares de transparencia, se informa que este sitio web es operado por HannaH Events, líderes en la organización de eventos corporativos."
       },
       {
-        "title": "2. Propiedad Intelectual",
+        "title": "2. Propiedad intelectual",
         "content": "Todos los contenidos, logotipos y diseños en este sitio son propiedad de HannaH Events. Queda prohibida su reproducción total o parcial sin autorización previa."
       },
       {
-        "title": "3. Limitación de Responsabilidad",
+        "title": "3. Limitación de responsabilidad",
         "content": "HannaH Events no se hace responsable de las interrupciones en el servicio web o de daños derivados del mal uso del sitio por parte de terceros."
       }
     ]
