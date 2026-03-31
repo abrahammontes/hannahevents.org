@@ -97,7 +97,7 @@ const Hero = ({ dictionary }: HeroProps) => {
           <button 
             onClick={scrollToTicketing}
             style={{ 
-            background: 'rgba(255, 255, 255, 0.1)', 
+            background: 'rgba(255, 255, 255, 0.05)', 
             border: '1px solid var(--outline)', 
             color: 'white', 
             padding: '1rem 2.5rem', 

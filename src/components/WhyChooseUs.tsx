@@ -133,9 +133,9 @@ const WhyChooseUs = ({ dictionary }: WhyChooseUsProps) => {
               className="optimized-highlight-card"
               style={{
                 padding: '3.5rem 3rem',
-                backgroundColor: 'rgba(255, 255, 255, 0.02)',
+                backgroundColor: 'rgba(255, 255, 255, 0.01)',
                 borderRadius: '1.5rem',
-                border: '1px solid rgba(255, 255, 255, 0.05)',
+                border: '1px solid rgba(255, 255, 255, 0.03)',
                 backdropFilter: 'blur(10px)',
                 display: 'flex',
                 flexDirection: 'column',

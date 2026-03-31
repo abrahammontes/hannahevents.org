@@ -103,8 +103,8 @@ const DiscoverMore = ({ dictionary }: DiscoverMoreProps) => {
                 borderRadius: '1.5rem',
                 overflow: 'hidden',
                 boxShadow: '0 30px 60px -15px rgba(0, 0, 0, 0.7)',
-                border: '1px solid rgba(255, 255, 255, 0.08)',
-                background: 'rgba(225, 225, 225, 0.03)',
+                border: '1px solid rgba(255, 255, 255, 0.03)',
+                background: 'rgba(255, 255, 255, 0.01)',
                 backdropFilter: 'blur(10px)',
                 cursor: 'pointer',
                 position: 'relative'

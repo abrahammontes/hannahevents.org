@@ -74,10 +74,10 @@ const Ticketing = ({ dictionary }: TicketingProps) => {
            viewport={{ once: true }}
            transition={{ duration: 1 }}
            style={{ 
-             background: 'linear-gradient(135deg, rgba(255, 255, 255, 0.03) 0%, rgba(255, 255, 255, 0.01) 100%)',
+             background: 'linear-gradient(135deg, rgba(255, 255, 255, 0.01) 0%, rgba(255, 255, 255, 0.005) 100%)',
              padding: '4rem',
              borderRadius: '2rem',
-             border: '1px solid rgba(255, 255, 255, 0.05)',
+             border: '1px solid rgba(255, 255, 255, 0.03)',
              backdropFilter: 'blur(20px)',
              boxShadow: '0 40px 100px -20px rgba(0,0,0,0.5)',
              display: 'flex',
