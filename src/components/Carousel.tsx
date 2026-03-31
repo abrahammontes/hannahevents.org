@@ -5,12 +5,34 @@ import { motion, AnimatePresence } from 'framer-motion';
 import { ChevronLeft, ChevronRight } from 'lucide-react';
 
 const images = [
-  '/images/carousel-new-1.jpg',
-  '/images/carousel-new-2.jpg',
-  '/images/carousel-new-3.jpg',
-  '/images/carousel-new-4.jpg',
-  '/images/carousel-new-5.jpg',
-  '/images/carousel-new-6.jpg'
+  '/images/carousel/HannaH (1).jpeg',
+  '/images/carousel/HannaH (3).jpeg',
+  '/images/carousel/HannaH (5).jpeg',
+  '/images/carousel/HannaH (6).jpeg',
+  '/images/carousel/HannaH (7).jpeg',
+  '/images/carousel/HannaH (8).jpeg',
+  '/images/carousel/HannaH (9).jpeg',
+  '/images/carousel/HannaH (12).jpeg',
+  '/images/carousel/HannaH (13).jpeg',
+  '/images/carousel/HannaH (15).jpeg',
+  '/images/carousel/HannaH (16).jpeg',
+  '/images/carousel/HannaH (17).jpeg',
+  '/images/carousel/HannaH (18).jpeg',
+  '/images/carousel/HannaH (19).jpeg',
+  '/images/carousel/HannaH (20).jpeg',
+  '/images/carousel/HannaH (21).jpeg',
+  '/images/carousel/HannaH (22).jpeg',
+  '/images/carousel/HannaH (23).jpeg',
+  '/images/carousel/HannaH (24).jpeg',
+  '/images/carousel/HannaH (25).jpeg',
+  '/images/carousel/HannaH (26).jpeg',
+  '/images/carousel/HannaH (27).jpeg',
+  '/images/carousel/HannaH (28).jpeg',
+  '/images/carousel/HannaH (29).jpeg',
+  '/images/carousel/HannaH (30).jpeg',
+  '/images/carousel/HannaH (31).jpeg',
+  '/images/carousel/HannaH (32).jpeg',
+  '/images/carousel/HannaH (33).jpeg'
 ];
 
 const Carousel = () => {
@@ -81,9 +103,9 @@ const Carousel = () => {
           <div 
             key={i} 
             style={{ 
-              width: i === currentIndex ? '2rem' : '0.5rem', 
-              height: '0.5rem', 
-              borderRadius: '1rem', 
+              width: i === currentIndex ? '1rem' : '0.3rem', 
+              height: '0.3rem', 
+              borderRadius: '0.5rem', 
               backgroundColor: i === currentIndex ? 'var(--primary)' : 'rgba(255,255,255,0.3)', 
               transition: 'all 0.3s ease' 
             }}
