@@ -71,7 +71,20 @@ const Ticketing = ({ dictionary }: TicketingProps) => {
             ))}
           </div>
 
-          <button className="gradient-btn" style={{ padding: '1.25rem 3.5rem', fontSize: '1rem' }}>{dictionary.cta}</button>
+          <a 
+            href="https://www.eventbrite.com.mx/o/hannah-events-121169253755" 
+            target="_blank" 
+            rel="noopener noreferrer" 
+            className="gradient-btn" 
+            style={{ 
+              display: 'inline-block',
+              textDecoration: 'none',
+              padding: '1.25rem 3.5rem', 
+              fontSize: '1rem' 
+            }}
+          >
+            {dictionary.cta}
+          </a>
         </motion.div>
 
         {/* Right: Visual Element (Glass Card) */}
