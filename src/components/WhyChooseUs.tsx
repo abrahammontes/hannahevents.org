@@ -5,7 +5,7 @@ import Link from 'next/link';
 import { motion } from 'framer-motion';
 import { Globe, Lightbulb, UserCheck, Eye } from 'lucide-react';
 
-import Carousel from './Carousel';
+import ImageMosaic from './ImageMosaic';
 
 interface WhyChooseUsProps {
   dictionary: {
@@ -181,7 +181,7 @@ const WhyChooseUs = ({ dictionary }: WhyChooseUsProps) => {
           </Link>
         </motion.div>
 
-        <Carousel />
+        <ImageMosaic />
       </div>
       
       <style jsx>{`
